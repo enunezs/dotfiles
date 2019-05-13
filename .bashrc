@@ -117,3 +117,8 @@ if ! shopt -oq posix; then
 fi
 alias config='/usr/bin/git --git-dir=/home/ema/.cfg/ --work-tree=/home/ema'
 alias config='/usr/bin/git --git-dir=/home/ema/.cfg/ --work-tree=/home/ema'
+alias config='/usr/bin/git --git-dir=/home/ema/.cfg/ --work-tree=/home/ema'
+alias config='/usr/bin/git --git-dir=/home/ema/.cfg/ --work-tree=/home/ema'
+
+
+
