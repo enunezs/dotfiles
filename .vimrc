@@ -1,4 +1,3 @@
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -6,13 +5,13 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+"call vundle"begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 " The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
+" Keep Plugin commands between vundle"begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -27,6 +26,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+
+Plugin 'dylanaraps/wal.vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,9 +45,40 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
 
 
 set runtimepath+=~/.vim_runtime
+
+" General
+set number	        " Show line numbers
+set linebreak	    " Break lines at word (requires Wrap lines)
+set showbreak=+++	" Wrap-broken line prefix
+set textwidth=100	" Line wrap (number of cols)
+set showmatch	    " Highlight matching brace
+set spell	        " Enable spell-checking
+set visualbell	    " Use visual bell (no beeping)
+ 
+set hlsearch	    " Highlight all search results
+set smartcase	    " Enable smart-case search
+set ignorecase	    " Always case-insensitive
+set incsearch	    " Searches for strings incrementally
+ 
+set autoindent	    " Auto-indent new lines
+set shiftwidth=4	" Number of auto-indent spaces
+set smartindent	    " Enable smart-indent
+set smarttab	    " Enable smart-tabs
+set softtabstop=4	" Number of spaces per Tab
+
+colorscheme wal
+
+
+" Advanced
+set ruler	        " Show row and column ruler information
+ 
+set undolevels=1000	" Number of undo levels
+set backspace=indent,eol,start	" Backspace behaviour
 
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
