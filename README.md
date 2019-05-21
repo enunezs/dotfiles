@@ -41,5 +41,8 @@ python3 install.py --clang-completer
 ```
 git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc 
 ```
+# Add veracrypt
 
+# Add Google Chrome
 
+# Add Spotify
