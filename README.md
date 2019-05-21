@@ -9,11 +9,11 @@ ZSH
 
 ZSH COMPLETION
 
-#VIM
+# VIM
 ```
 sudo apt install vim
 ```
-##Add Vundle
+## Add Vundle
 
 Install vundle plugin manager for Vim https://github.com/VundleVim/Vundle.vim
 [Vundle](https://github.com/VundleVim/Vundle.vim)
@@ -22,7 +22,7 @@ Install vundle plugin manager for Vim https://github.com/VundleVim/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-##Add You Complete Me
+## Add You Complete Me
 
 [https://github.com/Valloric/YouCompleteMe](YouCompleteMe)
 
@@ -37,7 +37,7 @@ python3 install.py --clang-completer
 ```
 
 
-#Clone
+# Clone
 ```
 git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc 
 ```
