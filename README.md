@@ -2,11 +2,13 @@
 # My System
 
 SSD -> Sda
+
 | Windows         | Ubuntu      | Manjaro   | Swap|
-| -------------   |-------------| -----     |-----|
-|  a1-a2          | a6          | a7        | a5  |
+| ---|---|---|---|
+|  a1/a2          | a6          | a7        | a5  |
 
 HDD -> Sdb
+
 | Windows         | Ubuntu      | Manjaro   | Swap|
 | -------------   |-------------| -----     |-----|
 |  b1          | b2          | b3        | b4  |
