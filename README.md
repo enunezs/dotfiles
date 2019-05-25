@@ -63,3 +63,29 @@ git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc
 # Add Google Chrome
 
 # Add Spotify
+
+# Pip3
+
+[https://pip.pypa.io/en/stable/](Pip3)
+
+```
+# Ubuntu
+sudo apt install python3-pip
+```
+
+# Pywal
+
+User install (No sudo)
+```
+pip3 install --user pywal
+
+# Add local 'pip' to PATH:
+# (In your .bashrc, .zshrc etc)
+export PATH="${PATH}:${HOME}/.local/bin/"
+```
+walp.sh into .config/wal/
+
+To execute
+```
+.config/wal/walp.sh 
+```
