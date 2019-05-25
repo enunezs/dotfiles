@@ -89,3 +89,9 @@ To execute
 ```
 .config/wal/walp.sh 
 ```
+On terminal
+```
+bash "/home/ema/.config/wal/walp.sh"
+```
+
+
