@@ -33,6 +33,7 @@ sudo apt install vim
 ## Add Vundle
 
 Install vundle plugin manager for Vim https://github.com/VundleVim/Vundle.vim
+
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 ```
@@ -127,6 +128,9 @@ sudo apt-get install fonts-roboto
 ## Iosevka
 
 [Iosevka](https://typeof.net/Iosevka/)
+
+Download term
+
 [download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
 
 ```
