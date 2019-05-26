@@ -41,7 +41,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Add You Complete Me
 
-[https://github.com/Valloric/YouCompleteMe](YouCompleteMe)
+[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 Ubuntu 16.04 and later:
 ```
@@ -66,7 +66,7 @@ git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc
 
 # Pip3
 
-[https://pip.pypa.io/en/stable/](Pip3)
+[Pip3](https://pip.pypa.io/en/stable/)
 
 ```
 # Ubuntu
@@ -111,7 +111,7 @@ source ~/.cache/wal/colors-tty.sh
 
 ## Papirus icons
 
-[https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/](Papirus)
+[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 
 ```
 sudo add-apt-repository ppa:papirus/papirus
@@ -126,9 +126,8 @@ sudo apt-get install fonts-roboto
 ```
 ## Iosevka
 
-[https://typeof.net/Iosevka/](Iosevka)
-
-[https://github.com/be5invis/Iosevka/releases/tag/v2.2.1](download)
+[Iosevka](https://typeof.net/Iosevka/)
+[download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
 
 ```
 # Linux : Copy the TTF files to your fonts directory
@@ -136,7 +135,6 @@ cp fonts ~/.fonts
 # Run: 
 sudo fc-cache
 ```
-
-
+Use "Iosevka Term Regular" on terminal
 
 
