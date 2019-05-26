@@ -107,3 +107,36 @@ cat ~/.cache/wal/sequences
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
 ```
+# Themes
+
+## Papirus icons
+
+[https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/](Papirus)
+
+```
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt-get update
+sudo apt-get install papirus-icon-theme
+```
+# Fonts
+
+## Roboto
+```
+sudo apt-get install fonts-roboto
+```
+## Iosevka
+
+[https://typeof.net/Iosevka/](Iosevka)
+
+[https://github.com/be5invis/Iosevka/releases/tag/v2.2.1](download)
+
+```
+# Linux : Copy the TTF files to your fonts directory
+cp fonts ~/.fonts
+# Run: 
+sudo fc-cache
+```
+
+
+
+
