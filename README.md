@@ -26,6 +26,14 @@ ZSH
 
 ZSH COMPLETION
 
+# Time 
+
+Set Linux time to local
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
 # VIM
 ```
 sudo apt install vim
