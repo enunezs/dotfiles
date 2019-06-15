@@ -15,7 +15,8 @@ HDD -> Sdb
 |  D:/          | Encrypted          | /home        | /home  |
 
 
-# dotfiles
+
+# Dotfiles
 
 
 STUFF HERE
@@ -26,22 +27,35 @@ ZSH
 
 ZSH COMPLETION
 
-# Time 
+## Clone
+```
+git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc 
+```
 
-Set Linux time to local
+# Ubuntu
+
+## TO DOs
+1. 
+
+
+## Time 
+
+To avoid conflicts with Windows, set Linux time to local
 
 ```
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
-# VIM
+## VIM
+
+Install Vim
+
 ```
 sudo apt install vim
 ```
 ## Add Vundle
 
-Install vundle plugin manager for Vim https://github.com/VundleVim/Vundle.vim
-
+Install vundle plugin manager for Vim 
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 ```
@@ -63,18 +77,24 @@ python3 install.py --clang-completer
 ```
 
 
-# Clone
-```
-git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc 
-```
-# Add veracrypt
+## Add veracrypt
 
-# Add Google Chrome
+## Add Google Chrome
 
-# Add Spotify
+Should I switch to Chromium?
 
-# Pip3
+[Chrome](https://www.google.com/chrome/)
 
+## Add Spotify
+
+Install Spotify through Ubuntu store
+
+[Spotify Download](https://www.spotify.com/es/download/linux/)
+
+## Pip3
+
+Pip3 python package installer
+Dont use `sudo`
 [Pip3](https://pip.pypa.io/en/stable/)
 
 ```
@@ -82,7 +102,9 @@ git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc
 sudo apt install python3-pip
 ```
 
-# Pywal
+## Theming
+
+### Pywal
 
 User install (No sudo)
 ```
@@ -92,9 +114,10 @@ pip3 install --user pywal
 # (In your .bashrc, .zshrc etc)
 export PATH="${PATH}:${HOME}/.local/bin/"
 ```
-walp.sh into .config/wal/
+copy walp.sh into .config/wal/
 
 To execute
+Add shortcut:
 ```
 .config/wal/walp.sh 
 ```
@@ -116,9 +139,9 @@ cat ~/.cache/wal/sequences
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
 ```
-# Themes
 
-## Papirus icons
+
+### Papirus icons
 
 [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 
@@ -127,13 +150,13 @@ sudo add-apt-repository ppa:papirus/papirus
 sudo apt-get update
 sudo apt-get install papirus-icon-theme
 ```
-# Fonts
+## Fonts
 
-## Roboto
+### Roboto
 ```
 sudo apt-get install fonts-roboto
 ```
-## Iosevka
+### Iosevka
 
 [Iosevka](https://typeof.net/Iosevka/)
 
