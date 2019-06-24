@@ -1,3 +1,13 @@
+# Big TODOs
+
+1. Doesn reflect actual system. Use new Data | Programs | Games structure
+a. Fix tables
+2. Separate Windows from Linux
+3. Upload Arch dot files
+4. Zsh instalation details
+5. Link to wal script
+6. Pictures for finished look
+
 
 # My System
 
@@ -13,7 +23,6 @@ HDD -> Sdb
 | -------------   |-------------| -----     |-----|
 |  b1          | b2          | b3        | b4  |
 |  D:/          | Encrypted          | /home        | /home  |
-
 
 
 # Dotfiles
