@@ -1,7 +1,5 @@
 # Big TODOs
 
-1. Doesn reflect actual system. Use new Data | Programs | Games structure
-a. Fix tables
 2. Separate Windows from Linux
 3. Upload Arch dot files
 4. Zsh instalation details
@@ -11,18 +9,28 @@ a. Fix tables
 
 # My System
 
+Partition madness!
+
+SSD contains all OSs and Swap space. Roughly half of the space is taken by Windows, and the rest is unevenly split by Linux partitions
+Make sure to install Windows, then Ubuntu then Manjaro! 
+
 SSD -> Sda
 
 | Windows         | Ubuntu      | Manjaro   | Swap|
 | ---|---|---|---|
 |  a1/a2          | a6          | a7        | a5  |
 
+HDD contains data and program files/installations (whenever possible). 
+Data folder is linked to Windows Libraries and set as default.
+Programs contains a copy of `Program Files` and `Program Files (x86)`. Programs are installed there whenever prompted.
+Games serves a similar function for games. Set as default on Steam for data storage
+
 HDD -> Sdb
 
-| Windows         | Ubuntu      | Manjaro   | Swap|
-| -------------   |-------------| -----     |-----|
-|  b1          | b2          | b3        | b4  |
-|  D:/          | Encrypted          | /home        | /home  |
+| Windows |     |       | Ubuntu | Manjaro | Swap |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+|  b1   |bp     |bg     | b2    | b3    | b4    |
+|  D:/ Data  | Programs | Games      | Encrypted          | /home        | /home  |
 
 
 # Dotfiles
@@ -176,9 +184,13 @@ Download term
 ```
 # Linux : Copy the TTF files to your fonts directory
 cp fonts ~/.fonts
+
+
+
 # Run: 
 sudo fc-cache
 ```
 Use "Iosevka Term Regular" on terminal
 
+# Windows
 
