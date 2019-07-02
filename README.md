@@ -44,9 +44,17 @@ ZSH
 
 ZSH COMPLETION
 
-## Clone
+Add to .bashrc/.zshrc
+
 ```
-git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.vimrc 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+echo ".cfg" >> .gitignore
+```
+...hmmm
+Make a new repo and test?
+
+```
+git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.cfg
 ```
 
 # Ubuntu
