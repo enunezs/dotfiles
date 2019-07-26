@@ -60,7 +60,14 @@ git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.cfg
 # Ubuntu
 
 ## TO DOs
-1. 
+
+virtual env
+docker?
+
+Install git
+```
+sudo apt install git
+```
 
 
 ## Time 
@@ -86,6 +93,12 @@ Install vundle plugin manager for Vim
 ```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+copy dotfile
+
+```
+vim +PluginInstall +qall
+```
+
 
 ## Add You Complete Me
 
