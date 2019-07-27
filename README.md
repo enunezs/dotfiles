@@ -76,6 +76,14 @@ config config --local status.showUntrackedFiles no
 virtual env
 docker?
 
+## Zsh
+
+```
+sudo apt install zsh
+chsh -s $(which zsh)
+```
+
+
 Install git
 ```
 sudo apt install git
