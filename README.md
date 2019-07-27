@@ -78,6 +78,8 @@ docker?
 
 ## Zsh
 
+(Oh My Zsh)[https://ohmyz.sh/]
+
 ```
 sudo apt install zsh
 chsh -s $(which zsh)
