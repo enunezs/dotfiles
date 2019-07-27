@@ -68,24 +68,6 @@ config config --local status.showUntrackedFiles no
 
 ```
 
-GIT
-
-ZSH
-
-ZSH COMPLETION
-
-Add to .bashrc/.zshrc
-
-```
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-echo ".cfg" >> .gitignore
-```
-...hmmm
-Make a new repo and test?
-
-```
-git clone --bare https://github.com/smallAtlas/dotfiles.git $HOME/.cfg
-```
 
 # Ubuntu
 
