@@ -35,8 +35,38 @@ HDD -> Sdb
 
 # Dotfiles
 
+Install Dotfiles!
 
-STUFF HERE
+```
+# add 'config' alias to .bashrc/.zsh
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+#Ignore self, avoid recursion problems
+# .cfg -> this repo
+# .config -> actual config files
+echo ".cfg" >> .gitignore
+
+# clone
+git clone --bare https://github.com/smallAtlas/dotfiles $HOME/.cfg
+
+# redefine alias
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+#checkout! (download)
+# may need to delete .bashrc
+
+# moves conflict files to backup folder
+mkdir -p .config-backup && \
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .config-backup/{}
+
+config checkout
+
+# flag to no untracked files
+config config --local status.showUntrackedFiles no
+
+
+```
 
 GIT
 
