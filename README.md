@@ -200,6 +200,12 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 ```
 
+### Gnome tweak tool
+
+```
+sudo apt install gnome-tweak-tool
+```
+
 
 ### Papirus icons
 
