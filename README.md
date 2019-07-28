@@ -139,6 +139,12 @@ python3 install.py --clang-completer
 
 ## Add veracrypt
 
+
+```
+
+sudo apt install exfat-fuse exfat-utils libexo-1-0
+```
+
 ## Add Google Chrome
 
 Should I switch to Chromium?
