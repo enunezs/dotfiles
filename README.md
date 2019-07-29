@@ -172,6 +172,11 @@ sudo apt install python3-pip
 
 ### Pywal
 
+
+```
+sudo apt install imagemagick
+```
+
 User install (No sudo)
 ```
 pip3 install --user pywal
