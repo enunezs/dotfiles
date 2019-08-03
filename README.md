@@ -33,6 +33,7 @@ HDD -> Sdb
 |  D:/ Data  | Programs | Games      | Encrypted          | /home        | /home  |
 
 
+
 # Dotfiles
 
 Install Dotfiles!
@@ -65,11 +66,9 @@ config checkout
 # flag to no untracked files
 config config --local status.showUntrackedFiles no
 
-
 ```
+#Ubuntu
 
-
-# Ubuntu
 
 ## TO DOs
 
@@ -254,3 +253,44 @@ Use "Iosevka Term Regular" on terminal
 
 # Windows
 
+INSTALL STUFF
+STEAM
+CHROME
+...
+VLC
+7ZIP
+
+# MANJARO
+
+    DONT HAVE TIME FOR ARCH ANYMORE
+
+
+
+## Time 
+
+To avoid conflicts with Windows, set Linux time to local
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+
+## ~~yaourt~~ trizen
+(link)[https://github.com/trizen/trizen]
+
+```
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+```
+
+
+## Chrome
+```
+trizen -S google-chrome
+```
+
+## dmenu -> rofi
+
+
+## font
