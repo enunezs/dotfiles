@@ -33,9 +33,21 @@ HDD -> Sdb
 |  D:/ Data  | Programs | Games      | Encrypted          | /home        | /home  |
 
 
+
 # Dotfiles
 
 Install Dotfiles!
+Use the probably not from Atlassian method
+(link)[https://www.atlassian.com/git/tutorials/dotfiles]
+
+To add:
+
+```
+config add .vimrc
+config commit -m "Add vimrc"
+```
+
+To clone:
 
 ```
 # add 'config' alias to .bashrc/.zsh
@@ -65,11 +77,50 @@ config checkout
 # flag to no untracked files
 config config --local status.showUntrackedFiles no
 
+```
 
+# Pending
+
+## Software
+Inkscape
+Krita
+Blender
+Gimp
+
+## Vim guide
+
+For both installation and usage
+
+## Long Markdown!
+We need an overhaul
+
+
+# Linux
+
+## Before installs
+
+
+Common linux area
+Move vim here
+
+
+Set up
+```
+  git config --global user.email "enunezsardinha@gmail.com"
+  git config --global user.name "Ema"
+``` 
+
+To avoid conflicts with Windows, set Linux time to local
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 
+Zsh
+
 # Ubuntu
+
 
 ## TO DOs
 
@@ -92,13 +143,7 @@ sudo apt install git
 ```
 
 
-## Time 
 
-To avoid conflicts with Windows, set Linux time to local
-
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
 
 ## VIM
 
@@ -253,4 +298,52 @@ sudo fc-cache
 Use "Iosevka Term Regular" on terminal
 
 # Windows
+
+INSTALL STUFF
+STEAM
+CHROME
+...
+VLC
+7ZIP
+
+# MANJARO
+
+    DONT HAVE TIME FOR ARCH ANYMORE
+
+## Guide
+
+## Time 
+
+To avoid conflicts with Windows, set Linux time to local
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+
+## ~~yaourt~~ trizen
+(link)[https://github.com/trizen/trizen]
+
+```
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+```
+
+
+## Chrome
+```
+trizen -S google-chrome
+```
+
+## dmenu -> rofi
+
+## font
+## Veracrypt
+## Mutt
+## Neofetch :D
+## i3 customization
+ncmpcpp
+powerline
+
 
