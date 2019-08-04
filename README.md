@@ -316,5 +316,7 @@ trizen -S google-chrome
 ## Mutt
 ## Neofetch :D
 ## i3 customization
+ncmpcpp
+powerline
 
 
