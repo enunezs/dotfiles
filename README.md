@@ -67,7 +67,26 @@ config checkout
 config config --local status.showUntrackedFiles no
 
 ```
-#Ubuntu
+
+# Pending
+
+## Software
+Inkscape
+Krita
+Blender
+Gimp
+
+## Vim guide
+
+For both installation and usage
+
+## Long Markdown!
+We need an overhaul
+
+
+
+
+# Ubuntu
 
 
 ## TO DOs
@@ -264,7 +283,7 @@ VLC
 
     DONT HAVE TIME FOR ARCH ANYMORE
 
-
+## Guide
 
 ## Time 
 
@@ -292,5 +311,10 @@ trizen -S google-chrome
 
 ## dmenu -> rofi
 
-
 ## font
+## Veracrypt
+## Mutt
+## Neofetch :D
+## i3 customization
+
+
