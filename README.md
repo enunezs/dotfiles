@@ -37,6 +37,17 @@ HDD -> Sdb
 # Dotfiles
 
 Install Dotfiles!
+Use the probably not from Atlassian method
+(link)[https://www.atlassian.com/git/tutorials/dotfiles]
+
+To add:
+
+```
+config add .vimrc
+config commit -m "Add vimrc"
+```
+
+To clone:
 
 ```
 # add 'config' alias to .bashrc/.zsh
@@ -84,7 +95,29 @@ For both installation and usage
 We need an overhaul
 
 
+# Linux
 
+## Before installs
+
+
+Common linux area
+Move vim here
+
+
+Set up
+```
+  git config --global user.email "enunezsardinha@gmail.com"
+  git config --global user.name "Ema"
+``` 
+
+To avoid conflicts with Windows, set Linux time to local
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+
+Zsh
 
 # Ubuntu
 
@@ -110,13 +143,7 @@ sudo apt install git
 ```
 
 
-## Time 
 
-To avoid conflicts with Windows, set Linux time to local
-
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
 
 ## VIM
 
