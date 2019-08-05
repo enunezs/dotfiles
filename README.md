@@ -129,8 +129,16 @@ docker?
 
 ## Zsh
 
+Arch:
+
+```
+sudo pacman -S zsh
+chsh -s /bin/zsh
+```
+
 (Oh My Zsh)[https://ohmyz.sh/]
 
+Ubuntu:
 ```
 sudo apt install zsh
 chsh -s $(which zsh)
