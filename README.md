@@ -134,6 +134,9 @@ docker?
 $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+sudo pacman -S powerline powerline-fonts powerline-vim
+
+
 
 
 Arch:
@@ -157,7 +160,7 @@ Install git
 sudo apt install git
 ```
 
-
+pacman -S base-devel
 
 
 ## VIM
