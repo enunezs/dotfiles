@@ -106,7 +106,7 @@ Move vim here
 
 Set up
 ```
-  git config --global user.email "enunezsardinha@gmail.com"
+  git config --global user.email "e@gmail.com"
   git config --global user.name "Ema"
 ``` 
 
@@ -175,6 +175,12 @@ Ubuntu 16.04 and later:
 ```
 sudo apt install build-essential cmake python3-dev
 ```
+
+Arch:
+```
+pacman -S cmake 
+```
+
 Compiling YCM with semantic support for C-family languages through libclang:
 ```
 cd ~/.vim/bundle/YouCompleteMe
