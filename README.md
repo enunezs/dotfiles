@@ -364,9 +364,21 @@ trizen -S google-chrome
 
 ## font
 ## Veracrypt
-## Mutt
-## Neofetch :D
+
+```
+sudo pacman -S Veracrypt
+```
+
+## Neofetch
+
+```
+sudo pacman -S neofetch
+```
+
 ## i3 customization
+
+
+## Mutt
 ncmpcpp
 powerline
 
