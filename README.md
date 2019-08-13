@@ -1,10 +1,10 @@
 # Big TODOs
 
-2. Separate Windows from Linux
-3. Upload Arch dot files
-4. Zsh instalation details
-5. Link to wal script
-6. Pictures for finished look
+1. Redefine goal of this guide. Who is it for at this point?
+1.a. Publish? 
+1.b. link to Vim
+2. Link to wal script
+3. Pictures for finished look
 
 
 # My System
