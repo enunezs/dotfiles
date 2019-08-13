@@ -87,9 +87,34 @@ Krita
 Blender
 Gimp
 
-## Vim guide
+# Vim guide
+Vim is large enough to have its own section
 
 For both installation and usage
+
+## Add Vundle
+
+Install vundle plugin manager for Vim 
+[Vundle](https://github.com/VundleVim/Vundle.vim)
+
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+copy dotfile
+
+```
+vim +PluginInstall +qall
+```
+
+
+## Add You Complete Me
+
+[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+
+Ubuntu 16.04 and later:
+```
+sudo apt install build-essential cmake python3-dev
+```
 
 ## Long Markdown!
 We need an overhaul
@@ -101,7 +126,7 @@ We need an overhaul
 
 
 Common linux area
-Move vim here
+
 
 
 Set up
@@ -170,29 +195,7 @@ Install Vim
 ```
 sudo apt install vim
 ```
-## Add Vundle
 
-Install vundle plugin manager for Vim 
-[Vundle](https://github.com/VundleVim/Vundle.vim)
-
-```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-copy dotfile
-
-```
-vim +PluginInstall +qall
-```
-
-
-## Add You Complete Me
-
-[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
-
-Ubuntu 16.04 and later:
-```
-sudo apt install build-essential cmake python3-dev
-```
 
 Arch:
 ```
@@ -321,14 +324,7 @@ sudo fc-cache
 ```
 Use "Iosevka Term Regular" on terminal
 
-# Windows
 
-INSTALL STUFF
-STEAM
-CHROME
-...
-VLC
-7ZIP
 
 # MANJARO
 
@@ -382,4 +378,22 @@ sudo pacman -S neofetch
 ncmpcpp
 powerline
 
+# Windows
 
+Do we even need this here?
+
+
+
+INSTALL STUFF
+STEAM
+CHROME
+...?
+VLC
+7ZIP
+VERACRYPT
+MATLAB
+VS CODE
+NOTEPAD++
+GITHUB DESKTOP
+GIMP
+SPOTIFY
