@@ -341,6 +341,16 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 
+
+## dmenu -> rofi
+
+## font
+
+## Software
+
+```
+sudo pacman -S neofetch ranger veracrypt rofi
+```
 ## ~~yaourt~~ trizen
 (link)[https://github.com/trizen/trizen]
 
@@ -350,26 +360,12 @@ cd trizen
 makepkg -si
 ```
 
-
 ## Chrome
 ```
-trizen -S google-chrome
+trizen -S google-chrome spotify
 ```
 
-## dmenu -> rofi
 
-## font
-## Veracrypt
-
-```
-sudo pacman -S Veracrypt
-```
-
-## Neofetch
-
-```
-sudo pacman -S neofetch
-```
 
 ## i3 customization
 
