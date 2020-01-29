@@ -324,13 +324,18 @@ sudo fc-cache
 ```
 Use "Iosevka Term Regular" on terminal
 
+# i3-gaps
 
+[link](https://github.com/Airblader/i3)
+[install](https://github.com/Airblader/i3/wiki/Installation)
+Add external repo and install
+```
+#Ubuntu
+sudo add-apt-repository ppa:kgilmer/speed-ricer
+sudo apt-get update
+sudo apt install i3-gaps-wm
+```
 
-# MANJARO
-
-    DONT HAVE TIME FOR ARCH ANYMORE
-
-## Guide
 
 ## Time 
 
