@@ -331,6 +331,15 @@ sudo apt-get update
 sudo apt install i3-gaps-wm
 ```
 
+## Terminal: St
+
+FINALLY
+
+Very interesting concept, change config and recompile
+
+```
+sudo make install
+```
 
 ## Time 
 
