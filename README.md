@@ -89,7 +89,14 @@ Blender
 Gimp
 
 
-# ZSH
+# ZSH And Commandline
+
+https://github.com/sindresorhus/pure
+
+https://github.com/agnoster/agnoster-zsh-theme
+
+https://github.com/powerline/fonts
+
 
 
 # Vim 
