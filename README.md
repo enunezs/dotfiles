@@ -136,11 +136,7 @@ sudo apt install build-essential cmake python3-dev
 
 
 
-## Before installs
-
-
-Common linux area
-
+# Before installs
 
 
 Set up
@@ -159,12 +155,81 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 # Ubuntu
 
 
-## TO DOs
+## Basic Software
+
+### Visual Studio Code
+
+https://code.visualstudio.com/
+
+### Veracrypt
+
+```
+sudo apt install exfat-fuse exfat-utils libexo-1-0
+```
+
+### Google Chrome
+
+Should I switch to Chromium?
+
+[Chrome](https://www.google.com/chrome/)
+
+### Spotify
+
+Pending, move to terminal
+
+Install Spotify through Ubuntu store
+
+[Spotify Download](https://www.spotify.com/es/download/linux/)
+
+
+## Gnome tweak tool
+
+```
+sudo apt install gnome-tweak-tool
+```
+
+### Papirus icons
+
+[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+
+```
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt-get update
+sudo apt-get install papirus-icon-theme
+```
+### Fonts
+
+#### Roboto
+```
+sudo apt-get install fonts-roboto
+```
+#### Iosevka
+
+[Iosevka](https://typeof.net/Iosevka/)
+
+Download term
+
+[download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
+
+```
+# Linux : Copy the TTF files to your fonts directory
+cp fonts ~/.fonts
+
+
+
+# Run: 
+sudo fc-cache
+```
+Use "Iosevka Term Regular" on terminal
+
+
+
+### TO DOs
 
 virtual env
 docker?
 
-## Zsh
+## ZSH on console
 
 
 ```
@@ -199,25 +264,6 @@ pacman -S base-devel
 
 
 
-## Add veracrypt
-
-
-```
-
-sudo apt install exfat-fuse exfat-utils libexo-1-0
-```
-
-## Add Google Chrome
-
-Should I switch to Chromium?
-
-[Chrome](https://www.google.com/chrome/)
-
-## Add Spotify
-
-Install Spotify through Ubuntu store
-
-[Spotify Download](https://www.spotify.com/es/download/linux/)
 
 ## Pip3
 
@@ -231,7 +277,7 @@ sudo apt install python3-pip
 ```
 
 
-## Pywal
+## x Pywal -> wpgtk
 
 
 ```
@@ -272,46 +318,6 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 ```
 
-## Gnome tweak tool
-
-```
-sudo apt install gnome-tweak-tool
-```
-
-
-### Papirus icons
-
-[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
-
-```
-sudo add-apt-repository ppa:papirus/papirus
-sudo apt-get update
-sudo apt-get install papirus-icon-theme
-```
-## Fonts
-
-### Roboto
-```
-sudo apt-get install fonts-roboto
-```
-### Iosevka
-
-[Iosevka](https://typeof.net/Iosevka/)
-
-Download term
-
-[download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
-
-```
-# Linux : Copy the TTF files to your fonts directory
-cp fonts ~/.fonts
-
-
-
-# Run: 
-sudo fc-cache
-```
-Use "Iosevka Term Regular" on terminal
 
 # i3-gaps
 
