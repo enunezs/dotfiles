@@ -79,7 +79,8 @@ config config --local status.showUntrackedFiles no
 
 ```
 
-# Pending
+
+# Linux
 
 ## Software
 Inkscape
@@ -87,8 +88,25 @@ Krita
 Blender
 Gimp
 
-# Vim guide
-Vim is large enough to have its own section
+
+# ZSH
+
+
+# Vim 
+
+Install Vim
+
+```
+sudo apt install vim
+```
+
+Compiling YCM with semantic support for C-family languages through libclang:
+```
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clang-completer
+```
+
+
 
 For both installation and usage
 
@@ -116,11 +134,7 @@ Ubuntu 16.04 and later:
 sudo apt install build-essential cmake python3-dev
 ```
 
-## Long Markdown!
-We need an overhaul
 
-
-# Linux
 
 ## Before installs
 
@@ -142,8 +156,6 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 
-Zsh
-
 # Ubuntu
 
 
@@ -160,8 +172,6 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 ```
 
 sudo pacman -S powerline powerline-fonts powerline-vim
-
-
 
 
 Arch:
@@ -187,26 +197,6 @@ sudo apt install git
 
 pacman -S base-devel
 
-
-## VIM
-
-Install Vim
-
-```
-sudo apt install vim
-```
-
-
-Arch:
-```
-pacman -S cmake 
-```
-
-Compiling YCM with semantic support for C-family languages through libclang:
-```
-cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --clang-completer
-```
 
 
 ## Add veracrypt
@@ -240,9 +230,8 @@ Dont use `sudo`
 sudo apt install python3-pip
 ```
 
-## Theming
 
-### Pywal
+## Pywal
 
 
 ```
@@ -283,7 +272,7 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 ```
 
-### Gnome tweak tool
+## Gnome tweak tool
 
 ```
 sudo apt install gnome-tweak-tool
@@ -347,8 +336,6 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 
 
-## dmenu -> rofi
-
 ## font
 
 ## Software
@@ -370,14 +357,18 @@ makepkg -si
 trizen -S google-chrome spotify
 ```
 
+# i3
+
+## dmenu -> rofi
 
 
-## i3 customization
 
 
 ## Mutt
 ncmpcpp
 powerline
+
+
 
 # Windows
 
