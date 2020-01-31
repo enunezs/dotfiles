@@ -206,10 +206,13 @@ sudo apt-get install papirus-icon-theme
 ```
 ### Fonts
 
+### Sans-Serif
 #### Roboto
 ```
 sudo apt-get install fonts-roboto
 ```
+
+### Serif
 #### Iosevka
 
 [Iosevka](https://typeof.net/Iosevka/)
