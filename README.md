@@ -213,6 +213,8 @@ sudo apt-get install fonts-roboto
 ```
 
 ### Serif
+
+### Terminal
 #### Iosevka
 
 [Iosevka](https://typeof.net/Iosevka/)
