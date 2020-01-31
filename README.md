@@ -113,6 +113,18 @@ cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clang-completer
 ```
 
+## Powerline -> Powerlevel9k
+https://github.com/Powerlevel9k/powerlevel9k#installation
+
+Option 2: Install for Oh-My-ZSH
+To install this theme for use in Oh-My-Zsh, clone this repository into your OMZ custom/themes directory.
+
+$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+You then need to select this theme in your ~/.zshrc:
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+Please note if you plan to set a POWERLEVEL9K_MODE to use a specific font, as described in this section of the Wiki, you must set the MODE before OMZ is loaded (look for source $ZSH/oh-my-zsh.sh in your ~/.zshrc).
+
 
 
 For both installation and usage
@@ -139,6 +151,8 @@ vim +PluginInstall +qall
 Ubuntu 16.04 and later:
 ```
 sudo apt install build-essential cmake python3-dev
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clang-completer
 ```
 
 
@@ -215,6 +229,12 @@ sudo apt-get install fonts-roboto
 ### Serif
 
 ### Terminal
+
+#### Nerd fonts
+
+https://www.nerdfonts.com/
+HAS IOSEVKA VERSION
+
 #### Iosevka
 
 [Iosevka](https://typeof.net/Iosevka/)
