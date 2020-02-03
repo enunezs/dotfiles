@@ -1,13 +1,14 @@
 # Big TODOs
 
-1. Redefine goal of this guide. Who is it for at this point?
-1.a. Publish? 
-1.b. link to Vim
+1. Forget Arch, focus on Ubuntu
 2. Link to wal script
 3. Pictures for finished look
 
 
 # My System
+
+//Describe system organization, data, games and veracrypt partition. 
+
 
 Partition madness!
 
@@ -33,8 +34,10 @@ HDD -> Sdb
 |  D:/ Data  | Programs | Games      | Encrypted          | /home        | /home  |
 
 
+# Linux
 
 # Dotfiles
+//Step 1. Install dotfiles
 
 Install Dotfiles!
 Use the probably not from Atlassian method
@@ -80,13 +83,13 @@ config config --local status.showUntrackedFiles no
 ```
 
 
-# Linux
-
 ## Software
 Inkscape
 Krita
 Blender
 Gimp
+Chrome
+Spotify
 
 
 # ZSH And Commandline
@@ -99,35 +102,137 @@ https://github.com/powerline/fonts
 
 
 
+
+
+# Before installs
+
+
+Set up
+```
+  git config --global user.email "e@gmail.com"
+  git config --global user.name "Ema"
+``` 
+
+To avoid conflicts with Windows, set Linux time to local
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+
+## Software
+
+### Visual Studio Code
+
+https://code.visualstudio.com/
+...Also add wal extension 
+
+### Veracrypt
+
+```
+sudo apt install exfat-fuse exfat-utils libexo-1-0
+```
+
+Don't forget to save mounted volume as favorites
+
+### Google Chrome
+
+Makes syncing with phone so much easier. Should I switch to Chromium or Firefox?
+
+[Chrome](https://www.google.com/chrome/)
+
+### Spotify
+
+For better hack-abiliy, add Spotify repository instead of installing through the store. 
+
+[Spotify Download](https://www.spotify.com/es/download/linux/)
+
+```
+#Add repo
+curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+#Install
+sudo apt-get update && sudo apt-get install spotify-client
+```
+
+## Gnome tweak tool
+
+How else are we applying those custom fonts and icon packs?
+
+```
+sudo apt install gnome-tweak-tool
+```
+
+### Papirus icons
+
+
+[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+
+```
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt-get update
+sudo apt-get install papirus-icon-theme
+```
+
+## Fonts
+
+### Sans-Serif
+
+#### Roboto
+```
+sudo apt-get install fonts-roboto
+```
+
+### Serif
+
+### Terminal
+
+#### Nerd fonts
+
+Patched fonts for terminal
+[Nerdfonts](https://www.nerdfonts.com/)
+Has some of my favorites already!
+
+#### Iosevka
+
+[Iosevka](https://typeof.net/Iosevka/)
+
+Download term
+
+[download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
+
+Use "Iosevka Term Regular" on terminal
+
+To install fonts on a per-user basis:
+```
+# Linux : Copy the TTF files to your fonts directory
+cp fonts ~/.fonts
+
+# Run: 
+sudo fc-cache
+```
+
+
+
 # Vim 
 
-Install Vim
+Surprisingly, Ubuntu doen't already include Vim. Lets fix that:
 
 ```
 sudo apt install vim
 ```
+Now lets make it useful
 
-Compiling YCM with semantic support for C-family languages through libclang:
+## You Complete Me
+
+[YCM](https://github.com/ycm-core/YouCompleteMe)
+
+Compiling YCM with semantic support for C-family languages through libclang. Ubuntu 16.04 and later:
 ```
+sudo apt install build-essential cmake python3-dev
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clang-completer
 ```
-
-## Powerline -> Powerlevel9k
-https://github.com/Powerlevel9k/powerlevel9k#installation
-
-Option 2: Install for Oh-My-ZSH
-To install this theme for use in Oh-My-Zsh, clone this repository into your OMZ custom/themes directory.
-
-$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-You then need to select this theme in your ~/.zshrc:
-
-ZSH_THEME="powerlevel9k/powerlevel9k"
-Please note if you plan to set a POWERLEVEL9K_MODE to use a specific font, as described in this section of the Wiki, you must set the MODE before OMZ is loaded (look for source $ZSH/oh-my-zsh.sh in your ~/.zshrc).
-
-
-
-For both installation and usage
 
 ## Add Vundle
 
@@ -148,121 +253,11 @@ vim +PluginInstall +qall
 
 [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
-Ubuntu 16.04 and later:
-```
-sudo apt install build-essential cmake python3-dev
-cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --clang-completer
-```
 
 
+# ZSH + Oh my Zsh
 
-# Before installs
-
-
-Set up
-```
-  git config --global user.email "e@gmail.com"
-  git config --global user.name "Ema"
-``` 
-
-To avoid conflicts with Windows, set Linux time to local
-
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
-
-
-# Ubuntu
-
-
-## Basic Software
-
-### Visual Studio Code
-
-https://code.visualstudio.com/
-
-### Veracrypt
-
-```
-sudo apt install exfat-fuse exfat-utils libexo-1-0
-```
-
-### Google Chrome
-
-Should I switch to Chromium?
-
-[Chrome](https://www.google.com/chrome/)
-
-### Spotify
-
-Pending, move to terminal
-
-Install Spotify through Ubuntu store
-
-[Spotify Download](https://www.spotify.com/es/download/linux/)
-
-
-## Gnome tweak tool
-
-```
-sudo apt install gnome-tweak-tool
-```
-
-### Papirus icons
-
-[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
-
-```
-sudo add-apt-repository ppa:papirus/papirus
-sudo apt-get update
-sudo apt-get install papirus-icon-theme
-```
-### Fonts
-
-### Sans-Serif
-#### Roboto
-```
-sudo apt-get install fonts-roboto
-```
-
-### Serif
-
-### Terminal
-
-#### Nerd fonts
-
-https://www.nerdfonts.com/
-HAS IOSEVKA VERSION
-
-#### Iosevka
-
-[Iosevka](https://typeof.net/Iosevka/)
-
-Download term
-
-[download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
-
-```
-# Linux : Copy the TTF files to your fonts directory
-cp fonts ~/.fonts
-
-
-
-# Run: 
-sudo fc-cache
-```
-Use "Iosevka Term Regular" on terminal
-
-
-
-### TO DOs
-
-virtual env
-docker?
-
-## ZSH on console
-
+Making the terminal useful
 
 ```
 $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -270,13 +265,6 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 
 sudo pacman -S powerline powerline-fonts powerline-vim
 
-
-Arch:
-
-```
-sudo pacman -S zsh
-chsh -s /bin/zsh
-```
 
 (Oh My Zsh)[https://ohmyz.sh/]
 
@@ -287,21 +275,25 @@ chsh -s $(which zsh)
 ```
 
 
-Install git
-```
-sudo apt install git
-```
 
-pacman -S base-devel
+## Powerline -> Powerlevel9k
 
+You then need to select this theme in your ~/.zshrc:
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+Please note if you plan to set a POWERLEVEL9K_MODE to use a specific font, as described in this section of the Wiki, you must set the MODE before OMZ is loaded (look for source $ZSH/oh-my-zsh.sh in your ~/.zshrc).
+
+
+
+For both installation and usage
 
 
 
 ## Pip3
 
-Pip3 python package installer
-Dont use `sudo`
 [Pip3](https://pip.pypa.io/en/stable/)
+
+Pip3 python package installer. Dont use `sudo` ...
 
 ```
 # Ubuntu
@@ -309,7 +301,7 @@ sudo apt install python3-pip
 ```
 
 
-## x Pywal -> wpgtk
+## Pywal
 
 
 ```
@@ -365,51 +357,15 @@ sudo apt install i3-gaps-wm
 
 ## Terminal: St
 
-FINALLY
-
-Very interesting concept, change config and recompile
+Very interesting approach to personalization. Change config file and straight up recompile!
 
 ```
+#Download, unzip, and run to install
 sudo make install
 ```
 
-## Time 
-
-To avoid conflicts with Windows, set Linux time to local
-
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
-
-
-
-## font
-
-## Software
-
-```
-sudo pacman -S neofetch ranger veracrypt rofi
-```
-## ~~yaourt~~ trizen
-(link)[https://github.com/trizen/trizen]
-
-```
-git clone https://aur.archlinux.org/trizen.git
-cd trizen
-makepkg -si
-```
-
-## Chrome
-```
-trizen -S google-chrome spotify
-```
-
-# i3
-
 ## dmenu -> rofi
-
-
-
+Copy config file
 
 ## Mutt
 ncmpcpp
@@ -436,3 +392,14 @@ NOTEPAD++
 GITHUB DESKTOP
 GIMP
 SPOTIFY
+
+
+
+## ~~yaourt~~ trizen
+(link)[https://github.com/trizen/trizen]
+
+```
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+```
