@@ -185,6 +185,10 @@ sudo apt-get install fonts-roboto
 
 ### Serif
 
+#### Dejavu
+
+https://dejavu-fonts.github.io/
+
 ### Terminal
 
 #### Nerd fonts
