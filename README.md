@@ -176,6 +176,12 @@ sudo apt-get install papirus-icon-theme
 
 ## Fonts
 
+### Microsoft Fonts
+
+```
+sudo apt-get install ttf-mscorefonts-installer
+```
+
 ### Sans-Serif
 
 #### Roboto
