@@ -385,7 +385,8 @@ sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev 
 libjsoncpp-dev
 
 git clone https://github.com/polybar/polybar
-cd ~/polybar/build.sh
+cd polybar && ./build.sh
+./build.sh
 
 ```
 
