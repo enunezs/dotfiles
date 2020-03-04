@@ -221,8 +221,12 @@ cp fonts ~/.fonts
 # Run: 
 sudo fc-cache
 ```
-
-
+Pending:
+https://github.com/belluzj/fantasque-sans
+inconsolata
+https://github.com/source-foundry/Hack
+https://github.com/Tecate/bitmap-fonts
+https://fontawesome.com/
 
 # Vim 
 
