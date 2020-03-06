@@ -176,6 +176,8 @@ sudo apt-get install papirus-icon-theme
 
 ## Fonts
 
+fonts-noto 
+fonts-mplus
 ### Microsoft Fonts
 
 ```
@@ -368,6 +370,25 @@ sudo add-apt-repository ppa:kgilmer/speed-ricer
 sudo apt-get update
 sudo apt install i3-gaps-wm
 ```
+
+```
+sudo apt-get install i3-wm dunst i3lock i3status suckless-tools
+```
+
+DPI shenanigans
+http://www.idc-online.com/technical_references/pdfs/electronic_engineering/Change_DPI_in_Ubuntu.pdf
+112 DPI 1.16666
+
+
+## i3-bar
+Config on normal file
+i3status
+
+```
+sudo apt-get install i3-wm dunst i3lock i3status suckless-tools
+```
+
+
 
 ## Terminal: St
 
