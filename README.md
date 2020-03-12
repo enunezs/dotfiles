@@ -230,6 +230,12 @@ https://github.com/source-foundry/Hack
 https://github.com/Tecate/bitmap-fonts
 https://fontawesome.com/
 
+
+## Japanese
+
+https://github.com/adobe-fonts/source-han-sans/tree/release
+
+
 # Vim 
 
 Surprisingly, Ubuntu doen't already include Vim. Lets fix that:
