@@ -438,6 +438,15 @@ cd polybar && ./build.sh
 ncmpcpp
 powerline
 
+## gcalcli
+
+```
+sudo apt-get install gcalcli
+```
+## ncmpcpp
+https://addy-dclxvi.github.io/post/configuring-ncmpcpp/
+
+sudo apt-get install mpd mpc ncmpcpp
 
 
 # Windows
