@@ -30,7 +30,7 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 * The "Games" partition serves a similar function but exclusively for games. Is set as the default adress for Steam data storage.
 
-* The "Encrypted" is reserved for (Veracrypt)[https://www.veracrypt.fr/en/Home.html], and can only be accessed through it. 
+* The "Encrypted" is reserved for [Veracrypt](https://www.veracrypt.fr/en/Home.html), and can only be accessed through it. 
 
 | Windows |     |       | Ubuntu | Manjaro | Swap |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -39,6 +39,8 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 
 # Linux
+
+Whenever possible I try to make my changes user-side. 
 
 # Dotfiles
 //Step 1. Install dotfiles
@@ -87,7 +89,7 @@ config config --local status.showUntrackedFiles no
 ```
 
 
-## Software
+# Software
 Inkscape
 Krita
 Blender
@@ -371,6 +373,9 @@ source ~/.cache/wal/colors-tty.sh
 
 # i3-gaps
 
+//TODO: Reorganize config
+//Fix font?
+
 [link](https://github.com/Airblader/i3)
 [install](https://github.com/Airblader/i3/wiki/Installation)
 Add external repo and install
@@ -391,6 +396,10 @@ http://www.idc-online.com/technical_references/pdfs/electronic_engineering/Chang
 
 
 ## i3-bar
+//TODO transition to i3 blocks
+
+Im planning to move to 
+
 Config on normal file
 i3status
 
