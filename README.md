@@ -5,28 +5,32 @@
 3. Pictures for finished look
 
 
-# My System
-
-//Describe system organization, data, games and veracrypt partition. 
-
+# Partitions
 
 Partition madness!
 
-SSD contains all OSs and Swap space. Roughly half of the space is taken by Windows, and the rest is unevenly split by Linux partitions
-Make sure to install Windows, then Ubuntu then Manjaro! 
+Welcome to my system, trying to keep some order and easy connection between systems, I have set several partitions with specific purposes. My SSD contains all of the OSs and some Swap space. Roughly half is taken by Windows, and the rest is unevenly split by Linux partitions (My main distro Ubuntu and a flavor of the month). Given that its considered a good principle to keep your SSD as empty as possible, only the OSs are stored on mine, and most data is kept on the HDD.
 
-SSD -> Sda
+If attemping, its recommended to always install Windows first, then Linux. 
+
+## SSD (Sda label)
 
 | Windows         | Ubuntu      | Manjaro   | Swap|
 | ---|---|---|---|
 |  a1/a2          | a6          | a7        | a5  |
 
-HDD contains data and program files/installations (whenever possible). 
-Data folder is linked to Windows Libraries and set as default.
-Programs contains a copy of `Program Files` and `Program Files (x86)`. Programs are installed there whenever prompted.
-Games serves a similar function for games. Set as default on Steam for data storage
 
-HDD -> Sdb
+My HDD contains my data and program files. Windows programs are installed here (whenever possible). 
+
+*The "Data" partition is linked to Windows Libraries/Collections and set as default path to free up space in the SSD. 
+
+*The "Programs" partition contains a copy of `Program Files` and `Program Files (x86)`. The installation path is set there whenever prompted.
+
+*The "Games" partition serves a similar function but exclusively for games. Is set as the default adress for Steam data storage.
+
+*The "Encrypted" is reserved for (Veracrypt)[https://www.veracrypt.fr/en/Home.html], and can only be accessed through it. 
+
+## HDD (Sdb label)
 
 | Windows |     |       | Ubuntu | Manjaro | Swap |
 | ----- | ----- | ----- | ----- | ----- | ----- |
