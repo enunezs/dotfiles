@@ -1,24 +1,26 @@
-# Big TODOs
 
-1. Forget Arch, focus on Ubuntu
-2. Link to wal script
-3. Pictures for finished look
 
+Welcome to my system setup guide! 
+
+I would like to preface this with the following: Im *not* a reputable source, I just like to cobble stuff together. After breaking my system one too many times, I decided to keep some sort of log of what im doing to it, and, you know, actually store keep track of my config files, so I decided to start writing this small summary.
+
+I keep forgetting what everything does, so this may be useful to more people than just me.
 
 # Partitions
 
+### SSD (Sda label)
+
 Partition madness!
 
-Welcome to my system, trying to keep some order and easy connection between systems, I have set several partitions with specific purposes. My SSD contains all of the OSs and some Swap space. Roughly half is taken by Windows, and the rest is unevenly split by Linux partitions (My main distro Ubuntu and a flavor of the month). Given that its considered a good principle to keep your SSD as empty as possible, only the OSs are stored on mine, and most data is kept on the HDD.
+Trying to keep some order and easy connection between systems, I have set several partitions with specific purposes. My SSD contains all of the OSs and some Swap space. Roughly half is taken by Windows, and the rest is unevenly split by Linux partitions (My main distro Ubuntu and a flavor of the month). Given that its considered a good principle to keep your SSD as empty as possible, only the OSs are stored on mine, and most data is kept on the HDD.
 
 If attemping, its recommended to always install Windows first, then Linux. 
-
-### SSD (Sda label)
 
 | Windows         | Ubuntu      | Manjaro   | Swap|
 | ---|---|---|---|
 |  a1/a2          | a6          | a7        | a5  |
 
+### HDD (Sdb label)
 
 My HDD contains my data and program files. Windows programs are installed here (whenever possible). 
 
@@ -29,8 +31,6 @@ My HDD contains my data and program files. Windows programs are installed here (
 * The "Games" partition serves a similar function but exclusively for games. Is set as the default adress for Steam data storage.
 
 * The "Encrypted" is reserved for (Veracrypt)[https://www.veracrypt.fr/en/Home.html], and can only be accessed through it. 
-
-### HDD (Sdb label)
 
 | Windows |     |       | Ubuntu | Manjaro | Swap |
 | ----- | ----- | ----- | ----- | ----- | ----- |
