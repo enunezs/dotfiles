@@ -1,0 +1,92 @@
+
+general {
+    output_format = "i3bar"
+	colors = true
+	markup = pango
+	interval = 1
+	color_good = "#00FFFF"
+	
+	#color_bad = $fg
+   #font pango:Iosevka 9 
+}
+
+order += "tztime local"
+
+
+order += "cpu_usage"
+order += "volume master"
+order += "battery 0"
+order += "load"
+order += "wireless wlp3s0"
+
+#order += "cpu_temperature 0"
+#order += "disk /"
+#order += "wireless wlp2s0"
+#order += "volume master"
+#order += "tztime local"
+
+tztime local {
+    #format ="<span font='Iosevka 9'> %d-%m-%Y %H:%M:%S <span>"
+    format ="%d-%m-%Y %H:%M"
+
+
+}
+
+
+cpu_usage {
+    #format = "<span font='Iosevka 9'>%usage</span>"
+    format = "%usage"
+
+}
+
+
+volume master {
+
+    #format = "<span font='Iosevka 9'>♪ %volume</span>"
+    format = "♪ %volume"
+	
+    format_muted = "<span font='Iosevka 9'> ? </span><span background='#e5e9f0'> Muted </span>"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+battery 0 {
+    format = " %status %percentage %remaining "
+	status_bat = ""
+	status_chr = ""
+	status_full = ""
+	low_threshold = 30
+	threshold_type = percentage
+	integer_battery_capacity = true
+	last_full_capacity = true
+}
+
+cpu_temperature 0 {
+    format = "<span background='#ff5555'>  </span><span background='#e5e9f0'> %degrees°C </span>"
+	path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+load {
+    format = "%5min"
+}
+
+
+cpu_temperature 0 {
+    format = "T: %degrees °C"
+	path = "/sys/devices/platform/coretemp.0/temp1_input"
+}	     
+
+disk "/" {
+    format = "<span background='#f1fa8c'>  </span><span background='#e5e9f0'> %free Free </span>"
+}
+
+wireless wlp3s0 {
+    format_up = "W:%essid"
+#(%quality of %bitrate) %ip"
+	format_down = "W: down"
+}
+
+
+
+
