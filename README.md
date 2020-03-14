@@ -13,7 +13,7 @@ Welcome to my system, trying to keep some order and easy connection between syst
 
 If attemping, its recommended to always install Windows first, then Linux. 
 
-## SSD (Sda label)
+### SSD (Sda label)
 
 | Windows         | Ubuntu      | Manjaro   | Swap|
 | ---|---|---|---|
@@ -22,15 +22,15 @@ If attemping, its recommended to always install Windows first, then Linux.
 
 My HDD contains my data and program files. Windows programs are installed here (whenever possible). 
 
-*The "Data" partition is linked to Windows Libraries/Collections and set as default path to free up space in the SSD. 
+* The "Data" partition is linked to Windows Libraries/Collections and set as default path to free up space in the SSD. 
 
-*The "Programs" partition contains a copy of `Program Files` and `Program Files (x86)`. The installation path is set there whenever prompted.
+* The "Programs" partition contains a copy of `Program Files` and `Program Files (x86)`. The installation path is set there whenever prompted.
 
-*The "Games" partition serves a similar function but exclusively for games. Is set as the default adress for Steam data storage.
+* The "Games" partition serves a similar function but exclusively for games. Is set as the default adress for Steam data storage.
 
-*The "Encrypted" is reserved for (Veracrypt)[https://www.veracrypt.fr/en/Home.html], and can only be accessed through it. 
+* The "Encrypted" is reserved for (Veracrypt)[https://www.veracrypt.fr/en/Home.html], and can only be accessed through it. 
 
-## HDD (Sdb label)
+### HDD (Sdb label)
 
 | Windows |     |       | Ubuntu | Manjaro | Swap |
 | ----- | ----- | ----- | ----- | ----- | ----- |
