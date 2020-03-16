@@ -30,15 +30,17 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 * The "Games" partition serves a similar function but exclusively for games. Is set as the default adress for Steam data storage.
 
-* The "Encrypted" is reserved for (Veracrypt)[https://www.veracrypt.fr/en/Home.html], and can only be accessed through it. 
+* The "Encrypted" is reserved for [Veracrypt](https://www.veracrypt.fr/en/Home.html), and can only be accessed through it. 
 
-| Windows |     |       | Ubuntu | Manjaro | Swap |
+| Windows |     |       |Shared | Ubuntu | Manjaro |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 |  b1   |bp     |bg     | b2    | b3    | b4    |
-|  D:/ Data  | Programs | Games      | Encrypted          | /home        | /home  |
+|  D:/ Data  | Programs | Games      | Encrypted     | /home        | /home  |
 
 
 # Linux
+
+Whenever possible I try to make my changes user-side. 
 
 # Dotfiles
 //Step 1. Install dotfiles
@@ -87,7 +89,7 @@ config config --local status.showUntrackedFiles no
 ```
 
 
-## Software
+# Software
 Inkscape
 Krita
 Blender
@@ -180,64 +182,53 @@ sudo apt-get install papirus-icon-theme
 
 ## Fonts
 
-fonts-noto 
-fonts-mplus
-### Microsoft Fonts
+A good system needs a selection of strong fonts, specially on a lowres screen like mine. 
+
+Installing fonts in Linux is incredibly simple, just move all .ttf/.tta files to the .fonts dir in the user home and run:
 
 ```
-sudo apt-get install ttf-mscorefonts-installer
-```
-
-### Sans-Serif
-
-#### Roboto
-```
-sudo apt-get install fonts-roboto
-```
-
-### Serif
-
-#### Dejavu
-
-https://dejavu-fonts.github.io/
-
-### Terminal
-
-#### Nerd fonts
-
-Patched fonts for terminal
-[Nerdfonts](https://www.nerdfonts.com/)
-Has some of my favorites already!
-
-#### Iosevka
-
-[Iosevka](https://typeof.net/Iosevka/)
-
-Download term
-
-[download](https://github.com/be5invis/Iosevka/releases/tag/v2.2.1)
-
-Use "Iosevka Term Regular" on terminal
-
-To install fonts on a per-user basis:
-```
-# Linux : Copy the TTF files to your fonts directory
-cp fonts ~/.fonts
-
-# Run: 
 sudo fc-cache
 ```
-Pending:
-https://github.com/belluzj/fantasque-sans
-inconsolata
-https://github.com/source-foundry/Hack
-https://github.com/Tecate/bitmap-fonts
-https://fontawesome.com/
+Some fonts have their own packages though
+
+| Sans-Serif |
+|:---|
+| Roboto ```sudo apt-get install fonts-roboto```|
+| Microsoft Fonts ``` sudo apt-get install ttf-mscorefonts-installer ``` A must have when using LibreOffice|
+| [Fantasque Sans](https://github.com/belluzj/fantasque-sans)  |
+| [Inconsolata](https://github.com/googlefonts/Inconsolata)|
+
+
+
+
+
+| Serif |
+|:---|
+|[Dejavu](https://dejavu-fonts.github.io/) |
+|Noto Fonts ```sudo apt-get install fonts-noto```|
+
+
+| Terminal (Monospace) |
+|:---|
+|~~[Iosevka](https://typeof.net/Iosevka/)~~ (Skip in favour of nerdfonts version) A personal favorite of mine, set "Iosevka Term Regular". |
+|[Bitmap fonts](https://github.com/Tecate/bitmap-fonts) A collection of bitmap fonts|
+|[Nerdfonts](https://www.nerdfonts.com/) Patched fonts for terminal, has many common ones|
+|[Powerline Fonts](https://github.com/powerline/fonts) Specially made for usage with Powerline|
+|[Awesome Font](https://fontawesome.com/) Used widely by many applications|
+
+
+| Japanese |
+|:---|
+| [M+ Fonts](https://mplus-fonts.osdn.jp/about-en.html) ```sudo apt-get install fonts-mplus```|
+| [Adobe Source Hans](https://github.com/adobe-fonts/source-han-sans/tree/release)|
+
+
+
 
 
 ## Japanese
 
-https://github.com/adobe-fonts/source-han-sans/tree/release
+
 
 
 # Vim 
@@ -371,6 +362,9 @@ source ~/.cache/wal/colors-tty.sh
 
 # i3-gaps
 
+//TODO: Reorganize config
+//Fix font?
+
 [link](https://github.com/Airblader/i3)
 [install](https://github.com/Airblader/i3/wiki/Installation)
 Add external repo and install
@@ -391,6 +385,10 @@ http://www.idc-online.com/technical_references/pdfs/electronic_engineering/Chang
 
 
 ## i3-bar
+//TODO transition to i3 blocks
+
+Im planning to move to 
+
 Config on normal file
 i3status
 
@@ -429,6 +427,15 @@ cd polybar && ./build.sh
 ncmpcpp
 powerline
 
+## gcalcli
+
+```
+sudo apt-get install gcalcli
+```
+## ncmpcpp
+https://addy-dclxvi.github.io/post/configuring-ncmpcpp/
+
+sudo apt-get install mpd mpc ncmpcpp
 
 
 # Windows
