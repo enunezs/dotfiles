@@ -445,18 +445,20 @@ Do we even need this here?
 
 
 INSTALL STUFF
-STEAM
+
 CHROME
-...?
+[VERACRYPT](https://www.veracrypt.fr/en/Home.html)
+[MATLAB](https://matlabacademy.mathworks.com/)
+[SPOTIFY](https://www.spotify.com/)
 VLC
+STEAM
+[FUSION360](https://www.autodesk.com/)
 7ZIP
-VERACRYPT
-MATLAB
 VS CODE
 NOTEPAD++
 GITHUB DESKTOP
 GIMP
-SPOTIFY
+
 
 
 
