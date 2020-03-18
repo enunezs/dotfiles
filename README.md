@@ -442,22 +442,16 @@ sudo apt-get install mpd mpc ncmpcpp
 
 Do we even need this here?
 
-
+[Nanite installer with my base apps](https://ninite.com/7zip-blender-chrome-foxit-gimp-googlebackupandsync-inkscape-libreoffice-notepadplusplus-skype-spotify-steam-vlc-vscode/)  
+7zip Blender Chrome Foxit Reader Gimp GDrive Sync Inkscape Libreoffice Notepad++ Skype Spotify Steam VLC Player VS Code,
 
 INSTALL STUFF
 
 CHROME
 [VERACRYPT](https://www.veracrypt.fr/en/Home.html)
 [MATLAB](https://matlabacademy.mathworks.com/)
-[SPOTIFY](https://www.spotify.com/)
-VLC
-STEAM
 [FUSION360](https://www.autodesk.com/)
-7ZIP
-VS CODE
-NOTEPAD++
 GITHUB DESKTOP
-GIMP
 
 
 
