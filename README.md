@@ -40,52 +40,70 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 # Linux
 
-Whenever possible I try to make my changes user-side. 
+Whenever possible I try to make my changes user-side.
+Currently using Ubuntu
 
-# Dotfiles
-//Step 1. Install dotfiles
+# Managing Dotfiles
 
-Install Dotfiles!
-Use the probably not from Atlassian method
-(link)[https://www.atlassian.com/git/tutorials/dotfiles]
+## Before: Git confg
 
-To add:
+
+Set up
+```
+  git config --global user.email "e@gmail.com"
+  git config --global user.name "Ema"
+``` 
+
+To avoid conflicts with Windows, set Linux time to local
 
 ```
-config add .vimrc
-config commit -m "Add vimrc"
+timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
-To clone:
+
+## Copying
+
+Install dotfiles Using the (Atlassian)[https://www.atlassian.com/git/tutorials/dotfiles] method. To clone all files to a system:
 
 ```
 # add 'config' alias to .bashrc/.zsh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-#Ignore self, avoid recursion problems
+
+#Ignore self -> avoid recursion problems
+echo ".cfg" >> .gitignore
 # .cfg -> this repo
 # .config -> actual config files
-echo ".cfg" >> .gitignore
 
-# clone
+# clone my repo of course
 git clone --bare https://github.com/smallAtlas/dotfiles $HOME/.cfg
 
 # redefine alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-#checkout! (download)
-# may need to delete .bashrc
-
-# moves conflict files to backup folder
+# move conflict files to backup folder
 mkdir -p .config-backup && \
 config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
 xargs -I{} mv {} .config-backup/{}
 
+# checkout! (download)
 config checkout
 
-# flag to no untracked files
+# Dont track files on this repo
 config config --local status.showUntrackedFiles no
+```
 
+## Adding
+
+Use config as a git command
+
+```
+config status
+config add .vimrc
+config commit -m "Add vimrc"
+config add .bashrc
+config commit -m "Add bashrc"
+config push
 ```
 
 
@@ -110,20 +128,6 @@ https://github.com/powerline/fonts
 
 
 
-# Before installs
-
-
-Set up
-```
-  git config --global user.email "e@gmail.com"
-  git config --global user.name "Ema"
-``` 
-
-To avoid conflicts with Windows, set Linux time to local
-
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
 
 
 ## Software
