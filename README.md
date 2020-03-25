@@ -39,12 +39,13 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 # Managing Dotfiles
 
+Some packages we can install right away. apt --fix makes sure all dependencies are installed.
+
 ```
 #all packages install
-sudo apt install git vim
-sudo apt install fonts-liberation libappindicator3-1
-apt --fix-broken install
+sudo apt install git vim fonts-liberation libappindicator3-1 curl
 
+apt --fix-broken install
 
 #To install .deb package
 sudo dpkg -i DEB_PACKAGE
@@ -141,6 +142,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
 
+# Matlab
+
+```
+sudo ./install
+```
 
 # SHELL: ZSH
 
