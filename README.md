@@ -39,10 +39,22 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 # Managing Dotfiles
 
-## Before: GConfiguring git
+```
+#all packages install
+sudo apt install git vim
+sudo apt install fonts-liberation libappindicator3-1
+apt --fix-broken install
+
+
+#To install .deb package
+sudo dpkg -i DEB_PACKAGE
+```
+
+## Before: Configuring git
 
 Set up
 ```
+  sudo apt install git
   git config --global user.email "e@gmail.com"
   git config --global user.name "Ema"
 ``` 
