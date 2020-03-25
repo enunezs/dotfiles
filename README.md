@@ -49,6 +49,7 @@ apt --fix-broken install
 
 #To install .deb package
 sudo dpkg -i DEB_PACKAGE
+sudo dpkg –-remove skypeforlinux
 ```
 
 ## Before: Configuring git
@@ -406,6 +407,44 @@ Blender
 Gimp
 Chrome
 Spotify
+
+# Wine
+
+https://wiki.winehq.org/Debian
+https://wiki.debian.org/Wine
+
+sudo dpkg --add-architecture i386 && sudo apt update
+
+
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+add to 
+/etc/apt/sources.list:	deb https://dl.winehq.org/wine-builds/debian/ buster main
+
+sudo apt install --install-recommends winehq-stable
+sudo dpkg --add-architecture i386 && sudo apt update
+sudo apt install \
+      wine \
+      wine32 \
+      wine64 \
+      libwine \
+      libwine:i386 \
+      fonts-wine
+
+
+# Matlab
+
+```
+#To install, extract and:
+xhost +SI:localuser:root
+sudo bash install
+#use default paths
+
+#If we need reactivation
+/usr/local/MATLAB/R20XXx/bin/activate_matlab.sh
+```
 
 # Windows
 
