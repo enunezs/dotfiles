@@ -44,6 +44,8 @@ Some packages we can install right away. apt --fix makes sure all dependencies a
 ```
 #all packages install
 sudo apt install git vim fonts-liberation libappindicator3-1 curl
+sudo apt-get install pdfshuffler
+
 
 apt --fix-broken install
 
