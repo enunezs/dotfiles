@@ -286,7 +286,55 @@ sudo apt install exfat-fuse exfat-utils libexo-1-0
 ```
 Don't forget to save mounted volume as favorite!
 
-### Google Chrome
+## Drive
+
+https://github.com/odeke-em/drive
+
+Install
+https://github.com/odeke-em/drive/blob/master/platform_packages.md
+
+```
+sudo apt-get install software-properties-common dirmngr
+
+sudo apt-add-repository 'deb http://shaggytwodope.github.io/repo ./'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7086E9CC7EC3233B
+sudo apt-key update
+sudo apt-get update
+sudo apt-get install drive
+```
+
+Set up credentials
+```
+drive init ~/gdrive
+cd ~/gdrive
+```
+
+
+You can export docs as txt!
+```
+drive pull -export pdf,rtf,docx,txt
+```
+
+
+```
+drive push -no-clobber #Push without destroying remote?
+drive push -convert #Convert text files to google docs!
+drive push -ocr #CONVERT PICTURES TO TEXT
+```
+
+```
+drive pub photos #Push and return resulting irl to share
+
+```
+
+```
+drive list #List remote
+```
+
+drive clashes
+
+
+## Google Chrome
 
 Makes syncing with phone so much easier. Should I switch to Chromium or Firefox?
 
