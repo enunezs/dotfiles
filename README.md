@@ -483,6 +483,10 @@ sudo apt install \
       libwine:i386 \
       fonts-wine
 
+NOT SURE
+sudo apt-get install mono-complete
+
+
 
 # Matlab
 
