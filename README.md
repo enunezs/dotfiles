@@ -330,9 +330,9 @@ drive pub photos #Push and return resulting irl to share
 ```
 drive list #List remote
 ```
-
-drive clashes
-
+```
+drive clashes --fix
+```
 
 ## Google Chrome
 
