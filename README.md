@@ -506,6 +506,8 @@ apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
 ```
 # I dont have a grpahics card :D
 apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
+sudo apt-get install winehq-staging
+sudo apt-get install winetricks
 ```
 # Windows
 
