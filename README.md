@@ -499,6 +499,10 @@ sudo bash install
 #If we need reactivation
 /usr/local/MATLAB/R20XXx/bin/activate_matlab.sh
 ```
+# Steam
+
+apt install libgtk2.0-0:i386
+
 
 # Windows
 
