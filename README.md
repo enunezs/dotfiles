@@ -501,7 +501,7 @@ sudo bash install
 ```
 # Steam
 
-apt install libgtk2.0-0:i386
+apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
 
 ```
 # I dont have a grpahics card :D
