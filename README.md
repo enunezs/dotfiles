@@ -503,7 +503,10 @@ sudo bash install
 
 apt install libgtk2.0-0:i386
 
-
+```
+# I dont have a grpahics card :D
+apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
+```
 # Windows
 
 Do we even need this here?
