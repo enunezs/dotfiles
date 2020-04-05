@@ -354,6 +354,16 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt-get update && sudo apt-get install spotify-client
 ```
 
+Avoid Spotify from being muted during calls... for people like me who use spotify during Skype calls
+
+```
+#https://unix.stackexchange.com/questions/159104/how-to-stop-gnome-from-muting-my-music
+#Simply comment out the line with load-module module-role-cork from the file /etc/pulse/default.pa
+```
+
+
+
+
 ## Gnome tweak tool
 
 How else are we applying those custom fonts and icon packs?
