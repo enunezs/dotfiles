@@ -472,6 +472,7 @@ Spotify
 
 https://wiki.winehq.org/Debian
 https://wiki.debian.org/Wine
+https://www.gloriouseggroll.tv/how-to-get-out-of-wine-dependency-hell/
 
 sudo dpkg --add-architecture i386 && sudo apt update
 
@@ -519,6 +520,17 @@ apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
 sudo apt-get install winehq-staging
 sudo apt-get install winetricks
 ```
+
+# Arduino
+
+Download and...
+
+```
+tar xvf FILENAME
+cd PACKAGENAME
+sudo ./install.sh
+```
+
 # Windows
 
 Do we even need this here?
