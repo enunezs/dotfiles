@@ -529,6 +529,11 @@ Download and...
 tar xvf FILENAME
 cd PACKAGENAME
 sudo ./install.sh
+
+
+#ITS NOT WORKING
+sudo chmod a+rw /dev/ttyUSB0]
+
 ```
 
 # Windows
