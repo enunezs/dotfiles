@@ -262,7 +262,11 @@ Very interesting approach to personalization. The config file IS the source code
 
 ```
 #Download, unzip, and run to install
-sudo make install
+#sudo make install
+sudo apt install stterm
+
+sudo update-alternatives --config x-terminal-emulator
+
 ```
 
 ## dmenu -> rofi
