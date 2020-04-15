@@ -313,27 +313,39 @@ drive init ~/gdrive
 cd ~/gdrive
 ```
 
+Ok, workflow as follows!
+
+cd to folder:
+```bash
+cd /media/veracrypt3/Drive/
+```
+
+I created something on my machine, want to upload it
+```bash
+drive push -no-clobber -ignore name clashes path/to/file/or/folder
+```
+
+I uploaded/created something on drive, want to donwload it
+```bash
+drive pull -no-clobber -ignore name clashes path/to/file/or/folder
+```
+
+I changed stuff on one end, want to update the other
+```bash
+drive pull/push -ignore-name-clashes path
+```
+
 
 You can export docs as txt!
 ```
 drive pull -export pdf,rtf,docx,txt
 ```
 
-
+List remote...
 ```
-drive push -no-clobber #Push without destroying remote?
-drive push -convert #Convert text files to google docs!
-drive push -ocr #CONVERT PICTURES TO TEXT
+drive list 
 ```
 
-```
-drive pub photos #Push and return resulting irl to share
-
-```
-
-```
-drive list #List remote
-```
 ```
 drive clashes --fix
 ```
