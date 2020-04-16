@@ -158,15 +158,11 @@ Making the terminal a bit more useful using the ZSH shell
 On Ubuntu:
 ```
 sudo apt install zsh
-chsh -s $(which zsh)
-```
-
-## [Oh My Zsh](https://ohmyz.sh/)
-
-```
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo apt-get install fonts-powerline
-
+chsh -s $(which zsh)  #Set zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install Oh my zsh
+sudo apt-get install fonts-powerline #install font
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k #Install powerline9k theme
+. ~/.zshrc #Reload source
 ```
 
 https://github.com/sindresorhus/pure
