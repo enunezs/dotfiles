@@ -39,10 +39,26 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 # Managing Dotfiles
 
-## Before: GConfiguring git
+Some packages we can install right away. apt --fix makes sure all dependencies are installed.
+
+```
+#all packages install
+sudo apt install git vim fonts-liberation libappindicator3-1 curl
+sudo apt-get install pdfshuffler
+
+
+apt --fix-broken install
+
+#To install .deb package
+sudo dpkg -i DEB_PACKAGE
+sudo dpkg –-remove skypeforlinux
+```
+
+## Before: Configuring git
 
 Set up
 ```
+  sudo apt install git
   git config --global user.email "e@gmail.com"
   git config --global user.name "Ema"
 ``` 
@@ -129,6 +145,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
 
+# Matlab
+
+```
+sudo ./install
+```
 
 # SHELL: ZSH
 
@@ -137,13 +158,11 @@ Making the terminal a bit more useful using the ZSH shell
 On Ubuntu:
 ```
 sudo apt install zsh
-chsh -s $(which zsh)
-```
-
-## [Oh My Zsh](https://ohmyz.sh/)
-
-```
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s $(which zsh)  #Set zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install Oh my zsh
+sudo apt-get install fonts-powerline #install font
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k #Install powerline9k theme
+. ~/.zshrc #Reload source
 ```
 
 https://github.com/sindresorhus/pure
@@ -241,7 +260,11 @@ Very interesting approach to personalization. The config file IS the source code
 
 ```
 #Download, unzip, and run to install
-sudo make install
+#sudo make install
+sudo apt install stterm
+
+sudo update-alternatives --config x-terminal-emulator
+
 ```
 
 ## dmenu -> rofi
@@ -265,7 +288,67 @@ sudo apt install exfat-fuse exfat-utils libexo-1-0
 ```
 Don't forget to save mounted volume as favorite!
 
-### Google Chrome
+## Drive
+
+https://github.com/odeke-em/drive
+
+Install
+https://github.com/odeke-em/drive/blob/master/platform_packages.md
+
+```
+sudo apt-get install software-properties-common dirmngr
+
+sudo apt-add-repository 'deb http://shaggytwodope.github.io/repo ./'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7086E9CC7EC3233B
+sudo apt-key update
+sudo apt-get update
+sudo apt-get install drive
+```
+
+Set up credentials
+```
+drive init ~/gdrive
+cd ~/gdrive
+```
+
+Ok, workflow as follows!
+
+cd to folder:
+```bash
+cd /media/veracrypt3/Drive/
+```
+
+I created something on my machine, want to upload it
+```bash
+drive push -no-clobber -ignore name clashes path/to/file/or/folder
+```
+
+I uploaded/created something on drive, want to donwload it
+```bash
+drive pull -no-clobber -ignore name clashes path/to/file/or/folder
+```
+
+I changed stuff on one end, want to update the other
+```bash
+drive pull/push -ignore-name-clashes path
+```
+
+
+You can export docs as txt!
+```
+drive pull -export pdf,rtf,docx,txt
+```
+
+List remote...
+```
+drive list 
+```
+
+```
+drive clashes --fix
+```
+
+## Google Chrome
 
 Makes syncing with phone so much easier. Should I switch to Chromium or Firefox?
 
@@ -284,6 +367,16 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 #Install
 sudo apt-get update && sudo apt-get install spotify-client
 ```
+
+Avoid Spotify from being muted during calls... for people like me who use spotify during Skype calls
+
+```
+#https://unix.stackexchange.com/questions/159104/how-to-stop-gnome-from-muting-my-music
+#Simply comment out the line with load-module module-role-cork from the file /etc/pulse/default.pa
+```
+
+
+
 
 ## Gnome tweak tool
 
@@ -388,6 +481,74 @@ Blender
 Gimp
 Chrome
 Spotify
+
+# Wine
+
+https://wiki.winehq.org/Debian
+https://wiki.debian.org/Wine
+https://www.gloriouseggroll.tv/how-to-get-out-of-wine-dependency-hell/
+
+sudo dpkg --add-architecture i386 && sudo apt update
+
+
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+add to 
+/etc/apt/sources.list:	deb https://dl.winehq.org/wine-builds/debian/ buster main
+
+sudo apt install --install-recommends winehq-stable
+sudo dpkg --add-architecture i386 && sudo apt update
+sudo apt install \
+      wine \
+      wine32 \
+      wine64 \
+      libwine \
+      libwine:i386 \
+      fonts-wine
+
+NOT SURE
+sudo apt-get install mono-complete
+
+
+
+# Matlab
+
+```
+#To install, extract and:
+xhost +SI:localuser:root
+sudo bash install
+#use default paths
+
+#If we need reactivation
+/usr/local/MATLAB/R20XXx/bin/activate_matlab.sh
+```
+# Steam
+
+apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
+
+```
+# I dont have a grpahics card :D
+apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
+sudo apt-get install winehq-staging
+sudo apt-get install winetricks
+```
+
+# Arduino
+
+Download and...
+
+```
+tar xvf FILENAME
+cd PACKAGENAME
+sudo ./install.sh
+
+
+#ITS NOT WORKING
+sudo chmod a+rw /dev/ttyUSB0]
+
+```
 
 # Windows
 
