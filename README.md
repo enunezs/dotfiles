@@ -44,7 +44,7 @@ Some packages we can install right away. apt --fix makes sure all dependencies a
 ```
 #all packages install
 sudo apt install git vim fonts-liberation libappindicator3-1 curl
-sudo apt-get install pdfshuffler
+sudo apt-get install pdfshuffler gimp
 
 
 apt --fix-broken install
@@ -54,7 +54,21 @@ sudo dpkg -i DEB_PACKAGE
 sudo dpkg –-remove skypeforlinux
 ```
 
-## Before: Configuring git
+## Before: 
+
+### Add sudo
+```
+su
+
+apt-get install sudo
+/sbin/adduser $username$ sudo
+exit
+
+sudo echo 'Hello!'
+```
+### Veracrypt
+
+### Configuring git
 
 Set up
 ```
