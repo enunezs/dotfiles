@@ -119,31 +119,33 @@ config push
 Surprisingly, Ubuntu doen't already include Vim. Lets fix that:
 
 ```
-sudo apt install vim
-```
+sudo apt install vim vim-gtk
+sudo apt install python-dev python3-dev cmake
 
-Now lets make it useful
 
-## You Complete Me
-
-[YCM](https://github.com/ycm-core/YouCompleteMe)
-
-Compiling YCM with semantic support for C-family languages through libclang. Ubuntu 16.04 and later:
-```
-sudo apt install build-essential cmake python3-dev
-cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --clang-completer
-```
+# Now lets make it useful
 
 ## Add Vundle
+# Install vundle plugin manager for Vim 
+# [Vundle](https://github.com/VundleVim/Vundle.vim)
 
-Install vundle plugin manager for Vim 
-[Vundle](https://github.com/VundleVim/Vundle.vim)
-
-```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+
+## [You Complete Me](https://github.com/ycm-core/YouCompleteMe)
+
+
+sudo apt install build-essential cmake python3-dev mono-complete
+cd ~/.vim/bundle/YouCompleteMe
+#Compiling YCM with semantic support for C-family languages through libclang. Ubuntu 16.04 and later:
+python3 install.py --clang-completer
+#C# support: install Mono and add --cs-completer when calling install.py.
+#JavaScript and TypeScript support: install Node.js and npm and add --ts-completer when calling install.py.
+#Java support: install JDK8 (version 8 required) and add --java-completer when calling install.py.
 ```
+
+
 
 # Matlab
 
