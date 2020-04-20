@@ -116,7 +116,10 @@ config push
 
 # MAIN TEXT EDITOR: Vim 
 
+//TODO: Explanation. Why are we doing this?
 Surprisingly, Ubuntu doen't already include Vim. Lets fix that:
+
+
 
 ```
 sudo apt install vim vim-gtk
@@ -145,6 +148,8 @@ python3 install.py --clang-completer
 #Java support: install JDK8 (version 8 required) and add --java-completer when calling install.py.
 ```
 
+Vim with autocompletion!
+![text](https://github.com/tinyAtlas/dotfiles/blob/master/Screenshots/VimAutocompleteScreenshot.png)
 
 
 # Matlab
