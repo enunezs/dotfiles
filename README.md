@@ -154,9 +154,12 @@ Vim with autocompletion!
 
 # Matlab
 
+Extract installer and execute. Can be installed to a non-default path, and then linked with the extension.
+
 ```
-sudo ./install
+./install
 ```
+
 
 # SHELL: ZSH
 
