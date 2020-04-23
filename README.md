@@ -183,7 +183,7 @@ On Ubuntu:
 ```
 sudo apt install zsh
 chsh -s $(which zsh)  #Set zsh
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install Oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install Oh my zsh
 sudo apt-get install fonts-powerline #install font
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k #Install powerline9k theme
 . ~/.zshrc #Reload source
@@ -512,6 +512,7 @@ https://wiki.winehq.org/Debian
 https://wiki.debian.org/Wine
 https://www.gloriouseggroll.tv/how-to-get-out-of-wine-dependency-hell/
 
+```
 sudo dpkg --add-architecture i386 && sudo apt update
 
 
@@ -519,8 +520,8 @@ sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 
-add to 
-/etc/apt/sources.list:	deb https://dl.winehq.org/wine-builds/debian/ buster main
+# add to 
+# /etc/apt/sources.list:	deb https://dl.winehq.org/wine-builds/debian/ buster main
 
 sudo apt install --install-recommends winehq-stable
 sudo dpkg --add-architecture i386 && sudo apt update
@@ -532,9 +533,9 @@ sudo apt install \
       libwine:i386 \
       fonts-wine
 
-NOT SURE
+# NOT SURE
 sudo apt-get install mono-complete
-
+```
 
 
 # Matlab
@@ -550,10 +551,11 @@ sudo bash install
 ```
 # Steam
 
+```
 apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
 
-```
 # I dont have a grpahics card :D
+
 apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
 sudo apt-get install winehq-staging
 sudo apt-get install winetricks
@@ -580,6 +582,13 @@ sudo chmod a+rw /dev/ttyUSB0]
 wget https://go.skype.com/skypeforlinux-64.deb
 sudo apt install ./skypeforlinux-64.deb
 ```
+
+# Virtual Box?
+
+No longer on Debian
+https://packages.debian.org/buster/virt-manager
+
+virt-manager
 
 # Windows
 
