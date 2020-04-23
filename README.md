@@ -98,7 +98,7 @@ echo ".cfg" >> .gitignore
 # .config -> actual config files
 
 # clone my repo of course
-git clone --bare https://github.com/smallAtlas/dotfiles $HOME/.cfg
+git clone --bare https://github.com/tinyAtlas/dotfiles $HOME/.cfg
 
 # redefine alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
