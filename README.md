@@ -113,6 +113,10 @@ config checkout
 
 # Dont track files on this repo
 config config --local status.showUntrackedFiles no
+
+git reset --hard HEAD
+git pull
+
 ```
 
 ## Adding
