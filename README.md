@@ -449,6 +449,13 @@ sudo apt install python3-pip
 ```
 sudo apt install imagemagick
 ```
+System-wide install
+
+```
+#Not super recommended to use sudo with pip3, but pywal is the basis of my customization style
+sudo pip3 install pywal
+```
+
 
 User install (No sudo)
 ```
