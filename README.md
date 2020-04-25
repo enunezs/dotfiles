@@ -8,6 +8,16 @@ I keep forgetting what everything does, so this may be useful to more people tha
 
 # Partitions
 
+| Boot         | Root      | Home   | Free Space |
+| ---|---|---|---|
+|  /boot          | /          | /home        | a5  |
+
+
+| Var        | Swap  | WorkData      | Games/Steam | Veracrypt | Virtual Machine |
+| ---|---|---|---|---|---|
+|  /var      | SWAP  | /mnt/WorkData | /mnt/Games  | *Mounted on veracrypt* | /mnt/VirtualMachine |
+
+
 ### SSD (Sda label)
 
 Partition madness!
@@ -563,11 +573,18 @@ sudo bash install
 # Steam
 
 ```
-apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
+# add to /etc/apt/sources.list
+# deb http://deb.debian.org/debian/ buster main contrib non-free
+# 
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install steam
+
+# sudo apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
 
 # I dont have a grpahics card :D
 
-apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
+sudo apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
 sudo apt-get install winehq-staging
 sudo apt-get install winetricks
 ```
