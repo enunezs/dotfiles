@@ -8,9 +8,9 @@ I keep forgetting what everything does, so this may be useful to more people tha
 
 # Partitions
 
-| Boot         | Root      | Home   | Free Space |
+| Boot         | Root      | Home   | Windows |
 | ---|---|---|---|
-|  /boot          | /          | /home        | a5  |
+|  /boot          | /          | /home        | Ehm, windows  |
 
 
 | Var        | Swap  | WorkData      | Games/Steam | Veracrypt | Virtual Machine |
