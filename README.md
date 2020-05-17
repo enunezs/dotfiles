@@ -273,7 +273,7 @@ sudo apt install i3-gaps-wm
 ```
 
 ```
-sudo apt-get install i3-wm dunst i3lock i3status suckless-tools
+sudo apt-get install i3-wm dunst i3lock i3status suckless-tools rofi
 ```
 
 DPI shenanigans
