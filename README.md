@@ -642,6 +642,10 @@ CHROME
 [FUSION360](https://www.autodesk.com/)
 GITHUB DESKTOP
 
+## Succesfull brightness fix 
+
+https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder
+
 
 
 
