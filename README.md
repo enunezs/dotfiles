@@ -1,4 +1,3 @@
-//TODO: Divide into stages: musts, shoulds and wants 
 
 Welcome to my system setup guide! 
 
@@ -22,9 +21,9 @@ I keep forgetting what everything does, so this may be useful to more people tha
 
 Partition madness!
 
-Trying to keep some order and easy connection between systems, I have set several partitions with specific purposes. My SSD contains all of the OSs and some Swap space. Roughly half is taken by Windows, and the rest is unevenly split by Linux partitions (My main distro Ubuntu and a flavor of the month). Given that its considered a good principle to keep your SSD as empty as possible, only the OSs are stored on mine, and most data is kept on the HDD.
+Trying to keep some order and easy connection between systems, I have set several partitions with specific purposes. My SSD contains all of the OSs and some Swap space. Roughly half is taken by Windows, and the rest is unevenly split by Linux partitions (My main distro ~Ubuntu~ Debian and a flavor of the month). Given that its considered a good principle to keep your SSD as empty as possible, only the OSs are stored on mine, and most data is kept on the HDD.
 
-If attemping, its recommended to always install Windows first, then Linux. 
+If attemping, its recommended to always install Windows first, then Linux. Ubuntu/Debian installs GRUB to access the differents OS and does a fine job in finding everything. 
 
 | Windows         | Ubuntu      | Manjaro   | Swap|
 | ---|---|---|---|
@@ -257,16 +256,16 @@ Some fonts have their own packages though
 
 # i3-gaps
 
-BOY
-//TODO: Reorganize config
-//Fix font?
+Some [nice](https://geekoverdose.wordpress.com/2017/02/05/i3-window-manager-setup-and-configuration/) 
+[guides](https://github.com/addy-dclxvi/i3-starterpack)
+on how to set up everything from people smarter than me
 
-How to use i3 on [multiple monitors](https://fedoramagazine.org/using-i3-with-multiple-monitors/)
+And how to use i3 on [multiple monitors](https://fedoramagazine.org/using-i3-with-multiple-monitors/)
 ```
 xrandr # Get screen info
 # HDM1 -> Screen output
 # LVDS1 -> My screen
-xrandr --output HDM1 --auto --right-of LVDS1
+xrandr --output HDM1 --auto --right-of LVDS1 # On my system
 
 ```
 
