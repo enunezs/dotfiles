@@ -261,6 +261,16 @@ BOY
 //TODO: Reorganize config
 //Fix font?
 
+How to use i3 on [multiple monitors](https://fedoramagazine.org/using-i3-with-multiple-monitors/)
+```
+xrandr # Get screen info
+# HDM1 -> Screen output
+# LVDS1 -> My screen
+xrandr --output HDM1 --auto --right-of LVDS1
+
+```
+
+
 [link](https://github.com/Airblader/i3)
 [install](https://github.com/Airblader/i3/wiki/Installation)
 Add external repo and install
