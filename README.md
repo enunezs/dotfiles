@@ -8,6 +8,16 @@ I keep forgetting what everything does, so this may be useful to more people tha
 
 # Partitions
 
+| Boot         | Root      | Home   | Windows |
+| ---|---|---|---|
+|  /boot          | /          | /home        | Ehm, windows  |
+
+
+| Var        | Swap  | WorkData      | Games/Steam | Veracrypt | Virtual Machine |
+| ---|---|---|---|---|---|
+|  /var      | SWAP  | /mnt/WorkData | /mnt/Games  | *Mounted on veracrypt* | /mnt/VirtualMachine |
+
+
 ### SSD (Sda label)
 
 Partition madness!
@@ -113,6 +123,10 @@ config checkout
 
 # Dont track files on this repo
 config config --local status.showUntrackedFiles no
+
+git reset --hard HEAD
+git pull
+
 ```
 
 ## Adding
@@ -247,6 +261,16 @@ BOY
 //TODO: Reorganize config
 //Fix font?
 
+How to use i3 on [multiple monitors](https://fedoramagazine.org/using-i3-with-multiple-monitors/)
+```
+xrandr # Get screen info
+# HDM1 -> Screen output
+# LVDS1 -> My screen
+xrandr --output HDM1 --auto --right-of LVDS1
+
+```
+
+
 [link](https://github.com/Airblader/i3)
 [install](https://github.com/Airblader/i3/wiki/Installation)
 Add external repo and install
@@ -259,7 +283,7 @@ sudo apt install i3-gaps-wm
 ```
 
 ```
-sudo apt-get install i3-wm dunst i3lock i3status suckless-tools
+sudo apt-get install i3-wm dunst i3lock i3status suckless-tools rofi
 ```
 
 DPI shenanigans
@@ -445,6 +469,13 @@ sudo apt install python3-pip
 ```
 sudo apt install imagemagick
 ```
+System-wide install
+
+```
+#Not super recommended to use sudo with pip3, but pywal is the basis of my customization style
+sudo pip3 install pywal
+```
+
 
 User install (No sudo)
 ```
@@ -552,11 +583,18 @@ sudo bash install
 # Steam
 
 ```
-apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
+# add to /etc/apt/sources.list
+# deb http://deb.debian.org/debian/ buster main contrib non-free
+# 
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install steam
+
+# sudo apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
 
 # I dont have a grpahics card :D
 
-apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
+sudo apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
 sudo apt-get install winehq-staging
 sudo apt-get install winetricks
 ```
@@ -590,6 +628,15 @@ https://packages.debian.org/buster/virt-manager
 
 virt-manager
 
+```
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+sudo apt install virtualbox-6.0
+```
+
+
+
 # Windows
 
 Do we even need this here?
@@ -604,6 +651,10 @@ CHROME
 [MATLAB](https://matlabacademy.mathworks.com/)
 [FUSION360](https://www.autodesk.com/)
 GITHUB DESKTOP
+
+## Succesfull brightness fix 
+
+https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder
 
 
 
