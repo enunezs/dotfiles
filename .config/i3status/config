@@ -12,11 +12,11 @@ general {
 
 order += "tztime local"
 
-
-order += "cpu_usage"
+order += "disk /"
+#order += "cpu_usage"
 order += "volume master"
 order += "battery 0"
-order += "load"
+#order += "load"
 order += "wireless wlp3s0"
 
 #order += "cpu_temperature 0"
@@ -25,16 +25,23 @@ order += "wireless wlp3s0"
 #order += "volume master"
 #order += "tztime local"
 
+
+
 tztime local {
-    #format ="<span font='Iosevka 9'> %d-%m-%Y %H:%M:%S <span>"
-    format ="%d-%m-%Y %H:%M"
+    #format ="<span font='Iosevka 10'> %d-%m-%Y %H:%M:%S <span>"
+    format ="日 %d 月 %m 年 %Y // %H時 %M分"
 
 
 }
 
+disk "/" {
+        format = "<span font='Iosevka 10'>%free Free </span>"
+}
+
+
 
 cpu_usage {
-    #format = "<span font='Iosevka 9'>%usage</span>"
+    #format = "<span font='Iosevka 10'>%usage</span>"
     format = "%usage"
 
 }
@@ -42,17 +49,18 @@ cpu_usage {
 
 volume master {
 
-    #format = "<span font='Iosevka 9'>♪ %volume</span>"
+    #format = "<span font='Iosevka 10'>♪ %volume</span>"
     format = "♪ %volume"
 	
-    format_muted = "<span font='Iosevka 9'> ? </span><span background='#e5e9f0'> Muted </span>"
+    format_muted = "<span font='Iosevka 10'> ? </span><span background='#e5e9f0'> Muted </span>"
 	device = "default"
 	mixer = "Master"
 	mixer_idx = 0
 }
 
 battery 0 {
-    format = " %status %percentage %remaining "
+    #format = " %status %percentage %remaining "
+	format = " %status %percentage"
 	status_bat = ""
 	status_chr = ""
 	status_full = ""
@@ -76,10 +84,6 @@ cpu_temperature 0 {
     format = "T: %degrees °C"
 	path = "/sys/devices/platform/coretemp.0/temp1_input"
 }	     
-
-disk "/" {
-    format = "<span background='#f1fa8c'>  </span><span background='#e5e9f0'> %free Free </span>"
-}
 
 wireless wlp3s0 {
     format_up = "W:%essid"
