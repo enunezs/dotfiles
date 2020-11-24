@@ -649,6 +649,7 @@ CHROME
 [VERACRYPT](https://www.veracrypt.fr/en/Home.html)
 [MATLAB](https://matlabacademy.mathworks.com/)
 [FUSION360](https://www.autodesk.com/)
+OFFICE (if license)
 GITHUB DESKTOP
 
 ## Succesfull brightness fix 
