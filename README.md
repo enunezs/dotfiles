@@ -635,27 +635,26 @@ sudo apt install virtualbox-6.0
 ```
 
 
-
-# Windows
-
-Do we even need this here?
-
-[Nanite installer with my base apps](https://ninite.com/7zip-blender-chrome-foxit-gimp-googlebackupandsync-inkscape-libreoffice-notepadplusplus-skype-spotify-steam-vlc-vscode/)  
-7zip Blender Chrome Foxit Reader Gimp GDrive Sync Inkscape Libreoffice Notepad++ Skype Spotify Steam VLC Player VS Code,
-
-INSTALL STUFF
-
-CHROME
-[VERACRYPT](https://www.veracrypt.fr/en/Home.html)
-[MATLAB](https://matlabacademy.mathworks.com/)
-[FUSION360](https://www.autodesk.com/)
-OFFICE (if license)
-GITHUB DESKTOP
-
-## Succesfull brightness fix 
+### Succesfull brightness fix 
 
 https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder
 
 
 
 
+
+
+
+# Windows
+
+[Nanite installer with my base apps](https://ninite.com/7zip-blender-firefox-foxit-gimp-googlebackupandsync-inkscape-libreoffice-notepadplusplus-skype-spotify-steam-vlc-vscode/)  
+7zip Blender Firefox Foxit Reader Gimp GDrive Sync Inkscape Libreoffice Notepad++ Skype Spotify Steam VLC Player VS Code,
+
+And not on Ninite
+
+- [VERACRYPT](https://www.veracrypt.fr/en/Home.html)
+- [MATLAB](https://matlabacademy.mathworks.com/)
+- [FUSION360](https://www.autodesk.com/)
+- [OFFICE](https://www.office.com/) (if license)
+- [GITHUB DESKTOP](https://desktop.github.com/)
+- LENOVO THING
