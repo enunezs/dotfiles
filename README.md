@@ -56,8 +56,11 @@ sudo apt install git vim fonts-liberation libappindicator3-1 curl
 sudo apt-get install pdfshuffler gimp
 
 
-apt --fix-broken install
+sudo apt --fix-broken install
+```
 
+Installing deb packages
+```
 #To install .deb package
 sudo dpkg -i DEB_PACKAGE
 sudo dpkg –-remove skypeforlinux
@@ -76,6 +79,9 @@ exit
 sudo echo 'Hello!'
 ```
 ### Veracrypt
+
+(download)[https://www.veracrypt.fr/en/Downloads.html]
+
 
 ### Configuring git
 
@@ -123,8 +129,8 @@ config checkout
 # Dont track files on this repo
 config config --local status.showUntrackedFiles no
 
-git reset --hard HEAD
-git pull
+config reset --hard HEAD
+config pull
 
 ```
 
@@ -163,13 +169,17 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 
+
 ## [You Complete Me](https://github.com/ycm-core/YouCompleteMe)
 
-
+sudo apt install build-essential cmake vim-nox python3-dev
+sudo apt install mono-complete golang nodejs default-jdk npm
 sudo apt install build-essential cmake python3-dev mono-complete
+
 cd ~/.vim/bundle/YouCompleteMe
 #Compiling YCM with semantic support for C-family languages through libclang. Ubuntu 16.04 and later:
 python3 install.py --clang-completer
+
 #C# support: install Mono and add --cs-completer when calling install.py.
 #JavaScript and TypeScript support: install Node.js and npm and add --ts-completer when calling install.py.
 #Java support: install JDK8 (version 8 required) and add --java-completer when calling install.py.
