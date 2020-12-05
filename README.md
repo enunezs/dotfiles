@@ -52,9 +52,7 @@ Some packages we can install right away. apt --fix makes sure all dependencies a
 
 ```
 #all packages install
-sudo apt install git vim fonts-liberation libappindicator3-1 curl
-sudo apt-get install pdfshuffler gimp
-
+sudo apt install git vim fonts-liberation libappindicator3-1 curl neofetch pdfshuffler gimp python3-pip
 
 sudo apt --fix-broken install
 ```
@@ -520,6 +518,12 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 ```
 
+### Pywalfox
+
+```
+pip install pywalfox
+pywalfox install
+```
 
 
 
