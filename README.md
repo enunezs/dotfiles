@@ -593,7 +593,11 @@ sudo bash install
 #If we need reactivation
 /usr/local/MATLAB/R20XXx/bin/activate_matlab.sh
 ```
-# Steam
+
+
+
+
+## Steam
 
 ```
 # add to /etc/apt/sources.list
@@ -601,15 +605,25 @@ sudo bash install
 # 
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install steam
+sudo apt install steam-installer
 
 # sudo apt install libgtk2.0-0:i386 vulcan-tools vulcan-utils
+
+sudo apt-get install libnss-resolve:i386
+
 
 # I dont have a grpahics card :D
 
 sudo apt install libgl1:i386 mesa-vulkan-drivers:i386 mesa-vulkan-drivers
 sudo apt-get install winehq-staging
 sudo apt-get install winetricks
+```
+
+
+To uninstall:
+
+```
+sudo apt-get purge steam steam-launcher
 ```
 
 # Arduino
