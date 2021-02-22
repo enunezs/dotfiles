@@ -58,6 +58,27 @@ My HDD contains my data and program files. Windows programs are installed here (
 
 //TODO: Reorganize -> First base installs
 
+# Favorite installs
+
+
+ - Gimp 
+ - Inkscape 
+ - Krita 
+ - VSCode 
+ - pdfarranger 
+ - ranger 
+ - okular 
+
+```
+sudo apt install gimp inkscape pdfarranger ranger okular
+```
+
+
+Veracrypt
+Skype 
+Teams
+Krita -> From the page
+Steam 
 
 # Managing Dotfiles
 
