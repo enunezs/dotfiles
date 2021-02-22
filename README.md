@@ -1,9 +1,17 @@
+//Intended not as guide but as self reminder.
+
+
 
 Welcome to my system setup guide! 
 
 I would like to preface this with the following: Im *not* a reputable source, I just like to cobble stuff together. After breaking my system one too many times, I decided to keep some sort of log of what im doing to it, and, you know, actually store keep track of my config files, so I decided to start writing this small summary.
 
 I keep forgetting what everything does, so this may be useful to more people than just me.
+
+
+
+
+
 
 # Partitions
 
@@ -45,6 +53,11 @@ My HDD contains my data and program files. Windows programs are installed here (
 | ----- | ----- | ----- | ----- | ----- | ----- |
 |  b1   |bp     |bg     | b2    | b3    | b4    |
 |  D:/ Data  | Programs | Games      | Encrypted     | /home        | /home  |
+
+
+
+//TODO: Reorganize -> First base installs
+
 
 # Managing Dotfiles
 
