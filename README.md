@@ -1,5 +1,5 @@
 
-Welcome to my system setup guide! 
+## Welcome to my system setup guide! 
 
 I would like to preface this with the following: Im *not* a reputable source, I just like to cobble stuff together. After breaking my system one too many times, I decided to keep some sort of log of what im doing to it, and, you know, actually store keep track of my config files, so I decided to start writing this small summary.
 
@@ -70,6 +70,8 @@ exit
 
 sudo echo 'Hello!'
 ```
+
+
 ### Veracrypt
 
 Very important for my workflow. Access my external drive and compressed files. [Download link](https://www.veracrypt.fr/en/Downloads.html)
@@ -209,7 +211,7 @@ Can be installed to a non-default path, and then linked with the extension.
 unzip matlab_*.zip
 sudo ./install
 ```
-
+Install the Debian Store extension to generate the Simlink quickly 
 
 ## SHELL: ZSH
 
