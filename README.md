@@ -72,7 +72,16 @@ sudo echo 'Hello!'
 ```
 ### Veracrypt
 
-(download)[https://www.veracrypt.fr/en/Downloads.html]
+Very important for my workflow. Access my external drive and compressed files. [Download link](https://www.veracrypt.fr/en/Downloads.html)
+Also install:
+
+```
+sudo apt install exfat-fuse exfat-utils libexo-1-0
+```
+
+Don't forget to save mounted volume as favorite!
+
+
 
 
 ### Configuring git
@@ -139,7 +148,17 @@ config commit -m "Add bashrc"
 config push
 ```
 
-# MAIN TEXT EDITOR: Vim 
+# WORK TOOLS
+
+
+## Visual Studio Code
+
+https://code.visualstudio.com/
+(Also add wal extension) 
+
+
+
+## Vim 
 
 //TODO: Explanation. Why are we doing this?
 Surprisingly, Ubuntu doen't already include Vim. Lets fix that:
@@ -181,16 +200,18 @@ Vim with autocompletion!
 ![text](https://github.com/tinyAtlas/dotfiles/blob/master/Screenshots/VimAutocompleteScreenshot.png)
 
 
-# Matlab
+## Matlab
 
-Extract installer and execute. Can be installed to a non-default path, and then linked with the extension.
+Login to [Matlab website](https://uk.mathworks.com/products/matlab.html), download, move to directory, extract installer with zip and execute. 
+Can be installed to a non-default path, and then linked with the extension.
 
 ```
-./install
+unzip matlab_*.zip
+sudo ./install
 ```
 
 
-# SHELL: ZSH
+## SHELL: ZSH
 
 Making the terminal a bit more useful using the ZSH shell
 
@@ -211,13 +232,15 @@ https://github.com/agnoster/agnoster-zsh-theme
 https://github.com/powerline/fonts
 
 
-## Powerline -> Powerlevel9k
+### Powerline -> Powerlevel9k
 
 You then need to select this theme in your ~/.zshrc:
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 Please note if you plan to set a POWERLEVEL9K_MODE to use a specific font, as described in this section of the Wiki, you must set the MODE before OMZ is loaded (look for source $ZSH/oh-my-zsh.sh in your ~/.zshrc).
+
+# PERZONALIZATION
 
 # Fonts
 
@@ -320,22 +343,6 @@ sudo update-alternatives --config x-terminal-emulator
 Copy config file
 
 
-
-# Software
-
-## Visual Studio Code
-
-https://code.visualstudio.com/
-(Also add wal extension) 
-
-## Veracrypt
-
-Very important for my workflow. Access to all my compressed files 
-
-```
-sudo apt install exfat-fuse exfat-utils libexo-1-0
-```
-Don't forget to save mounted volume as favorite!
 
 ## Drive
 
