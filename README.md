@@ -57,12 +57,6 @@ sudo apt install git vim fonts-liberation libappindicator3-1 curl neofetch pdfsh
 sudo apt --fix-broken install
 ```
 
-Installing deb packages
-```
-#To install .deb package
-sudo dpkg -i DEB_PACKAGE
-sudo dpkg –-remove skypeforlinux
-```
 
 ## Before: 
 
@@ -667,6 +661,18 @@ sudo apt install virtualbox-6.0
 
 https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder
 
+
+
+
+# Cheatsheet
+
+Installing deb packages
+
+```
+#To install .deb package
+sudo dpkg -i DEB_PACKAGE
+sudo dpkg –-remove skypeforlinux
+```
 
 
 
