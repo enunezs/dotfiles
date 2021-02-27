@@ -54,6 +54,10 @@ Some packages we can install right away. apt --fix makes sure all dependencies a
 #all packages install
 sudo apt install git vim fonts-liberation libappindicator3-1 curl neofetch pdfshuffler gimp python3-pip
 
+#Play mp4 files
+sudo apt-get install ubuntu-restricted-extras
+sudo apt-get install libavcodec58 ffmpeg
+
 sudo apt --fix-broken install
 ```
 
