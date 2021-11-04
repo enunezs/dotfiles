@@ -226,7 +226,7 @@ Making the terminal a bit more useful using the ZSH shell
 
 On Ubuntu:
 ```
-sudo apt install zsh
+sudo apt install zsh curl
 chsh -s $(which zsh)  #Set zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install Oh my zsh
 sudo apt-get install fonts-powerline #install font
