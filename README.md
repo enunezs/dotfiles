@@ -448,7 +448,7 @@ Avoid Spotify from being muted during calls... for people like me who use spotif
 How else are we applying those custom fonts and icon packs?
 
 ```
-sudo apt install gnome-tweak-tool
+sudo apt install gnome-tweaks
 ```
 
 ## Papirus icons
